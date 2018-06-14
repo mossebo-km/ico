@@ -19,7 +19,7 @@ if (! function_exists('mix')) {
     function mix($path, $manifestDirectory = '')
     {
         static $manifest;
-        $publicFolder = '/public';
+        $publicFolder = '';
         $rootPath = $_SERVER['DOCUMENT_ROOT'];
         $publicPath = $rootPath . $publicFolder;
         if ($manifestDirectory && strpos($manifestDirectory, '/') !== 0) {
