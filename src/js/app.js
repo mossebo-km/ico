@@ -1,1 +1,12 @@
-import $ from 'jquery'
+
+/**
+ * Imports
+ */
+
+import './bootstrap'
+
+
+/**
+ * Components
+ */
+
