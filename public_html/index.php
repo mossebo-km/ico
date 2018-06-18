@@ -13,10 +13,13 @@ require_once './mix.php';
 
     <link rel="stylesheet" href="<?php echo mix('assets/css/app.css') ?>">
 
-    <title>Document</title>
+    <title>Mossebo.ICO</title>
 </head>
 <body>
 
+<header class="header">
+
+</header>
 
 
 <script src="<?php echo mix('assets/js/manifest.js') ?>" defer></script>

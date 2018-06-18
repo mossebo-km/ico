@@ -1,3 +1,7 @@
 # Add any directories, files, or patterns you don't want to be tracked by version control
 .idea
+.DS_Store
+**/.DS_Store
 /node_modules
+**/*.js.map
+**/*.css.map
