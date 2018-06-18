@@ -1,0 +1,16 @@
+.symbol-icon {
+    display: block;
+    fill: ;
+    transition: ;
+    &:hover {
+        fill: ;
+    }
+}
+.symbol-logo {
+    width: 144px;
+    height: 31px;
+    @include media-breakpoint-down(md) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
