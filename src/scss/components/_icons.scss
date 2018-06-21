@@ -1,9 +1,9 @@
 .symbol-icon {
     display: block;
-    fill: ;
-    transition: ;
+    fill: $color-icons-2;
+    transition: $transition;
     &:hover {
-        fill: ;
+        fill: $color-icons;
     }
 }
 .symbol-logo {

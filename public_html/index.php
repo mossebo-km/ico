@@ -21,7 +21,11 @@ require_once './mix.php';
     <div class="container">
         <div class="row">
             <div class="col-md-2">
-
+                <a href="#" class="logo">
+                    <svg class="symbol-icon symbol-logo-ru">
+                        <use xlink:href="/assets/images/icons.svg#{{ __('layouts.mossebo-market-logo') }}"></use>
+                    </svg>
+                </a>
             </div>
             <div class="col-md-6">
 
