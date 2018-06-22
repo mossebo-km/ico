@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&subset=cyrillic,cyrillic-ext');
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: $color-text-primary;
+
+    //-webkit-font-smoothing: antialiased !important;
+    //-webkit-backface-visibility: hidden;
+    //-moz-backface-visibility: hidden;
+    //-ms-backface-visibility: hidden;
+}

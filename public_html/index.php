@@ -19,22 +19,36 @@ require_once './mix.php';
 
 <header class="header">
     <div class="container">
-        <div class="row">
-            <div class="col-md-2">
+        <div class="row align-items-center">
+            <div class="logo-item">
                 <a href="#" class="logo">
-                    <svg class="symbol-icon symbol-logo-ru">
-                        <use xlink:href="/assets/images/icons.svg#{{ __('layouts.mossebo-market-logo') }}"></use>
+                    <svg class="symbol-icon symbol-logo">
+                        <use xlink:href="/assets/images/icons.svg#symbol-logo"></use>
                     </svg>
                 </a>
             </div>
-            <div class="col-md-6">
-
+            <div class="menu-item">
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a href="#">Whitepaper</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">RoadMap</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Моssebo.market</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-md-2">
-
+            <div class="link-item">
+                <a href="#" class="button button-primary">Стать инвестором</a>
             </div>
-            <div class="col-md-2">
-
+            <div class="lang-item">
+                <a href="" class="js-ht">
+                    <svg class="symbol-icon symbol-logo">
+                        <use xlink:href="/assets/images/icons.svg#symbol-logo"></use>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>

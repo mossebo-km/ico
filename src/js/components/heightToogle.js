@@ -1,62 +1,6 @@
-webpackJsonp([0],{
-
-/***/ "./src/js/app.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap__ = __webpack_require__("./src/js/bootstrap.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__bootstrap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_heightToogle__ = __webpack_require__("./src/js/components/heightToogle.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_heightToogle___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_heightToogle__);
-
-/**
- * Imports
- */
-
-
-
-/**
- * Components
- */
-
-
-/**
- * APP
- */
-$(document).ready(function () {
-
-  heightToggle('.js-ht', {
-    bindCloseEvents: true
-  });
-});
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
-/***/ "./src/js/bootstrap.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {
-/**
- * We'll load jQuery and the Bootstrap jQuery plugin which provides support
- * for JavaScript based Bootstrap features such as modals and tabs. This
- * code may be modified to fit the specific needs of your application.
- */
-
-try {
-  window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__("./node_modules/jquery/dist/jquery.js");
-} catch (e) {}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
-/***/ "./src/js/components/heightToogle.js":
-/***/ (function(module, exports) {
-
 // Всплывашки.
 
-;(function () {
+;(function() {
     "use strict";
 
     var pluginName = 'heightToggle';
@@ -66,41 +10,43 @@ try {
         innerQuery: '.ht-inner',
         bindCloseEvents: false,
         isOpened: false,
-        toggleCaption: false
-    };
+        toggleCaption: false,
+    }
 
-    function Plugin(el, options) {
+    function Plugin( el, options ) {
         if (pluginName in el) return;
 
         var _ = this,
             href;
 
-        _.eventDestroyers = [];
+        _.eventDestroyers = []
 
         _.loadOptions(options || {});
 
         _.els = {};
 
-        try {
+        try{
             _.els.trigger = el;
 
             if (href = el.getAttribute('data-href')) {
                 _.els.container = document.querySelector(href);
-            } else if (_.opt.containerQuery !== defaultOptions.containerQuery) {
+            }
+            else if (_.opt.containerQuery !== defaultOptions.containerQuery) {
                 _.els.container = document.querySelector(_.opt.containerQuery);
-            } else {
+            }
+            else {
                 _.els.container = _.els.trigger.parentNode.querySelector(_.opt.containerQuery);
             }
 
             _.els.inner = _.els.container.querySelector(_.opt.innerQuery);
-        } catch (e) {
+        } catch(e) {
             console.log('HT init error: (1)');
             return;
         }
 
-        el[pluginName] = this;
+        el[pluginName] = this
 
-        if (el.classList.contains('is-active')) {
+        if (el.classList.contains('is-active')){
             _.opt.isOpened = true;
             el.classList.remove('is-active');
         }
@@ -116,34 +62,38 @@ try {
         for (var i in defaultOptions) {
             if (i in options) {
                 _.opt[i] = options[i];
-            } else {
+            }
+            else {
                 _.opt[i] = defaultOptions[i];
             }
         }
-    };
+    }
 
     Plugin.prototype.bindEvent = function (obj, name, cb, options) {
-        cb = cb.bind(this);
+        cb = cb.bind(this)
 
-        this.eventDestroyers.push(function () {
-            obj.removeEventListener(name, cb);
-        });
+        this.eventDestroyers.push(() => {
+            obj.removeEventListener(name, cb)
+        })
 
-        obj.addEventListener(name, cb, options);
-    };
+        obj.addEventListener(name, cb, options)
+    }
 
     Plugin.prototype.init = function () {
         var _ = this;
 
-        _.mutationObserver = new MutationObserver(_.update.bind(_));
+        _.mutationObserver = new MutationObserver(_.update.bind(_))
 
-        _.mutationObserver.observe(_.els.container, { attributes: false, childList: true, characterData: true, subtree: true });
+        _.mutationObserver.observe(
+            _.els.container,
+            { attributes: false, childList: true, characterData: true, subtree: true }
+        )
 
-        _.bindEvent(window, 'resize', _.update, { passive: true });
-        _.bindEvent(document, 'click', _.windowClick, { passive: true });
+        _.bindEvent(window, 'resize', _.update, { passive: true })
+        _.bindEvent(document, 'click', _.windowClick, { passive: true })
 
         if (_.opt.bindCloseEvents) {
-            _.bindEvent(document, 'keydown', _.keydown, { passive: true });
+            _.bindEvent(document, 'keydown', _.keydown, { passive: true })
         }
 
         _.update();
@@ -157,16 +107,17 @@ try {
             });
         }
 
-        _.bindEvent(_.els.container, 'transitionend', function (e) {
+        _.bindEvent(_.els.container, 'transitionend', function(e) {
             e.stopPropagation();
 
             if (_.active) {
                 _.dispatchEvent('HT::opened');
-            } else {
+            }
+            else {
                 _.dispatchEvent('HT::closed');
             }
-        }, { passive: true });
-    };
+        }, { passive: true })
+    }
 
     Plugin.prototype.close = function () {
         var _ = this;
@@ -179,10 +130,11 @@ try {
 
         if (_.opt.minH) {
             _.els.container.style.maxHeight = _.opt.minH + 'px';
-        } else {
+        }
+        else {
             _.els.container.removeAttribute('style');
         }
-    };
+    }
 
     Plugin.prototype.open = function () {
         var _ = this;
@@ -194,7 +146,7 @@ try {
         }
 
         _.els.container.style.maxHeight = _.maxH + 'px';
-    };
+    }
 
     Plugin.prototype.toggle = function () {
         var _ = this;
@@ -202,7 +154,7 @@ try {
         _.active ? _.close() : _.open();
 
         _.toggleCaption();
-    };
+    }
 
     Plugin.prototype.toggleCaption = function () {
         var _ = this;
@@ -214,7 +166,7 @@ try {
             _.els.trigger.innerText = a;
             _.els.trigger.setAttribute('data-caption', b);
         }
-    };
+    }
 
     Plugin.prototype.update = function () {
         var _ = this;
@@ -229,7 +181,7 @@ try {
             _.maxH = h;
             _.active ? _.open() : _.close();
         }
-    };
+    }
 
     Plugin.prototype.windowClick = function (e) {
         var _ = this,
@@ -238,12 +190,14 @@ try {
         if (_.els.trigger.contains(el)) {
             _.toggle();
             e.stopPropagation();
-        } else if (_.els.container.contains(el)) {
+        }
+        else if (_.els.container.contains(el)) {
             e.stopPropagation();
-        } else if (_.opt.bindCloseEvents) {
+        }
+        else if (_.opt.bindCloseEvents) {
             _.close();
         }
-    };
+    }
 
     Plugin.prototype.keydown = function (e) {
         var _ = this;
@@ -252,15 +206,16 @@ try {
         if (_.active && code === 27) {
             _.close();
         }
-    };
+    }
 
-    Plugin.prototype.dispatchEvent = function (eventName) {
+    Plugin.prototype.dispatchEvent = function(eventName) {
         var _ = this;
 
         if (typeof CustomEvent === 'undefined') {
             var myEvent = document.createEvent(eventName);
             myEvent.initCustomEvent(eventName, false, true);
-        } else {
+        }
+        else {
             var myEvent = new CustomEvent(eventName, {
                 bubbles: false,
                 cancelable: true
@@ -268,31 +223,29 @@ try {
         }
 
         _.els.trigger.dispatchEvent(myEvent);
-    };
+    }
 
-    Plugin.prototype.destroy = function () {
+    Plugin.prototype.destroy = function() {
         var _ = this;
 
-        _.close();
-        _.eventDestroyers.forEach(function (destroyer) {
-            return destroyer();
-        });
-        _.els.trigger[pluginName] = undefined;
-        delete _.els.trigger[pluginName];
+        _.close()
+        _.eventDestroyers.forEach(destroyer => destroyer())
+        _.els.trigger[pluginName] = undefined
+        delete _.els.trigger[pluginName]
 
         if (_.mutationObserver) {
-            _.mutationObserver.disconnect();
-            _.mutationObserver = undefined;
-            delete _.mutationObserver;
+            _.mutationObserver.disconnect()
+            _.mutationObserver = undefined
+            delete _.mutationObserver
         }
-    };
+    }
 
-    window[pluginName] = function (el, options) {
+    window[pluginName] = function( el, options ){
         if (el instanceof Element) {
             return new Plugin(el, options);
         }
 
-        if (!(el instanceof NodeList)) {
+        if (! (el instanceof NodeList)) {
             el = document.querySelectorAll(el);
         }
 
@@ -305,26 +258,5 @@ try {
         });
 
         return set;
-    };
-})();
-
-/***/ }),
-
-/***/ "./src/scss/app.scss":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 0:
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__("./src/js/app.js");
-module.exports = __webpack_require__("./src/scss/app.scss");
-
-
-/***/ })
-
-},[0]);
-//# sourceMappingURL=app.js.map
+    }
+}());

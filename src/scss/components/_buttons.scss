@@ -1,0 +1,22 @@
+.button {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 14px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: $transition;
+    letter-spacing: 0.5px;
+    &:hover {
+        opacity: .8;
+        text-decoration: none;
+    }
+    &-primary {
+        color: $color-background;
+        background: #fee500;
+        background: -moz-linear-gradient(left, #fee500 0%, #ffb533 100%);
+        background: -webkit-linear-gradient(left, #fee500 0%,#ffb533 100%);
+        background: linear-gradient(to right, #fee500 0%,#ffb533 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee500', endColorstr='#ffb533',GradientType=1 );
+    }
+}

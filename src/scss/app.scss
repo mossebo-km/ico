@@ -2,20 +2,21 @@
 // Variables
 @import "~normalize.css";
 
+@import "variables/global";
+@import "variables/grid";
 @import "variables/colors";
 
-// Bootstrap
-@import "~bootstrap/scss/bootstrap-grid";
-
 // Components
+@import "components/fonts";
+@import "components/icons";
 @import "components/inputs";
 @import "components/buttons";
 
 
 //Layouts
+@import "blocks/header";
 
-
-// Universal Blocks
+// Blocks
 
 
 //Plugins
