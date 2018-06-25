@@ -16,3 +16,10 @@
         }
     }
 }
+
+.lang-item {
+    &__flag {
+        display: inline-block;
+        margin: 0 4px;
+    }
+}

@@ -19,7 +19,9 @@ mix.js('src/js/app.js', publicDir + '/assets/js')
         processCssUrls: false,
     })
     .extract([
-        'jquery'
+        'jquery',
+        'vue',
+        'lodash'
     ])
     .version();
 

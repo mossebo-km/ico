@@ -378,6 +378,18 @@ html, body {
   color: #323F4C;
 }
 
+.h1 {
+  font-size: 40px;
+}
+
+.h2 {
+  font-size: 32px;
+}
+
+.h3 {
+  font-size: 18px;
+}
+
 .symbol-icon {
   display: block;
   fill: #A3A3A3;
@@ -392,6 +404,33 @@ html, body {
 .symbol-logo {
   width: 144px;
   height: 31px;
+}
+
+.symbol-flag-ru, .symbol-flag-en, .symbol-flag-jp, .symbol-flag-zh, .symbol-flag-es {
+  background-image: url(/assets/images/languages.png);
+  background-position: 0px 0px;
+  background-size: 174px 22px;
+  background-repeat: no-repeat;
+  width: 34px;
+  height: 22px;
+  -webkit-box-shadow: 0 0 1px #999;
+          box-shadow: 0 0 1px #999;
+}
+
+.symbol-flag-en {
+  background-position: -35px 0;
+}
+
+.symbol-flag-jp {
+  background-position: -70px 0;
+}
+
+.symbol-flag-zh {
+  background-position: -105px 0;
+}
+
+.symbol-flag-es {
+  background-position: -140px 0;
 }
 
 .button {
@@ -437,6 +476,11 @@ html, body {
   color: #323F4C;
   text-decoration: none;
   padding: 10px 20px;
+}
+
+.lang-item__flag {
+  display: inline-block;
+  margin: 0 4px;
 }
 
 /*# sourceMappingURL=app.css.map*/

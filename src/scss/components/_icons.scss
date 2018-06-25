@@ -12,3 +12,31 @@
     height: 31px;
 
 }
+
+
+.symbol-flag {
+    &-ru, &-en, &-jp, &-zh, &-es {
+        background-image: url(/assets/images/languages.png);
+        background-position: 0px 0px;
+        background-size: 174px 22px;
+        background-repeat: no-repeat;
+        width: 34px;
+        height: 22px;
+        box-shadow: 0 0 1px #999;
+    }
+    &-ru {
+        //background-position: center 200px;
+    }
+    &-en {
+        background-position: -35px 0;
+    }
+    &-jp {
+        background-position: -70px 0;
+    }
+    &-zh {
+        background-position: -105px 0;
+    }
+    &-es {
+        background-position: -140px 0;
+    }
+}

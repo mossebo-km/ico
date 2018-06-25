@@ -4,24 +4,29 @@
  */
 
 import './bootstrap'
-
+import Vue from 'vue'
 
 /**
  * Components
  */
-import './components/heightToogle'
-
+//import './components/heightToogle'
+import Youtube from './components/youtube'
 
 
 /**
  * APP
  */
-$( document ).ready(function() {
-
-
-    heightToggle('.js-ht', {
-        bindCloseEvents: true
-    })
-
-
+let app = new Vue({
+    el: '#app',
+    data: {
+        message: 'Hello Vue!'
+    },
+    components: {
+        Youtube,
+    },
+    mounted() {
+        // heightToggle('.js-ht', {
+        //     bindCloseEvents: true
+        // });
+    }
 });
