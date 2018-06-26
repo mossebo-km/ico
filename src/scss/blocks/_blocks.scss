@@ -1,0 +1,100 @@
+
+.we-best {
+    padding-top: 90px;
+    padding-bottom: 140px;
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 300px;
+        font-size: 18px;
+    }
+    &__icon {
+        margin-right: 15px;
+    }
+    .col-3 {
+        &:nth-child(2) {
+            .we-best__item {
+                max-width: 300px;
+                padding: 15px 40px;
+                box-shadow: 0 0 80px rgba(255,181,51, .2);
+                border-radius: 50px;
+                font-size: 14px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        &:nth-child(3) {
+            .we-best__item {
+                float: right;
+            }
+        }
+    }
+}
+
+
+.about {
+    &__title {
+        max-width: 75%;
+    }
+    .h2 {
+        margin-bottom: 60px;
+    }
+    &__description {
+        padding-left: 75px;
+    }
+}
+
+
+.whitepaper {
+    padding-top: 130px;
+    padding-bottom: 110px;
+    &__title {
+        margin-bottom: 60px;
+    }
+    .download {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+        &__item {
+            border: 2px solid #FCD133;
+            border-radius: 30px;
+            width: 100px;
+            text-align: center;
+            color: $color-text-primary;
+            text-decoration: none;
+            padding: 12px 15px 12px 40px;
+            position: relative;
+            &:hover {
+                .download__button {
+                    border: none;
+                    padding: 11px;
+                    background: #ffb533;
+                    background: -moz-linear-gradient(left, #ffb533 0%, #fee500 100%);
+                    background: -webkit-linear-gradient(left, #ffb533 0%,#fee500 100%);
+                    background: linear-gradient(to right, #ffb533 0%,#fee500 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb533', endColorstr='#fee500',GradientType=1 );
+                }
+                .symbol-icon {
+                    fill: $color-background;
+                }
+            }
+        }
+        &__button {
+            position: absolute;
+            z-index: 2;
+            width: 47px;
+            height: 47px;
+            left: -2px;
+            top: -2px;
+            border: 2px solid #FCD133;
+            border-radius: 50%;
+            padding: 9px;
+            box-sizing: border-box;
+            .symbol-icon {
+                fill: #FCD133;
+            }
+        }
+    }
+}
