@@ -1,0 +1,55 @@
+input {
+    &:focus {
+        outline: none;
+    }
+}
+.subscribe {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    &__form {
+        width: 300px;
+        display: inline-block;
+        position: relative;
+    }
+    &__button {
+        padding: 14px;
+        text-align: center;
+        background: #ffb533;
+        background: -moz-linear-gradient(left, #ffb533 0%, #fee500 100%);
+        background: -webkit-linear-gradient(left, #ffb533 0%,#fee500 100%);
+        background: linear-gradient(to right, #ffb533 0%,#fee500 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb533', endColorstr='#fee500',GradientType=1 );
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        margin-left: -52px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.14);
+        .symbol-icon {
+            fill: $color-background;
+        }
+    }
+    &__icon + &__icon {
+        margin-left: 25px;
+    }
+}
+
+input[type='text'].subscribe__input {
+    padding: 17px 70px 17px 40px;
+    color: $color-background;
+    border: 1px solid $color-primary;
+    border-radius: 30px;
+    font-size: 14px;
+    background: #fee500;
+    background: -moz-linear-gradient(left, #fee500 0%, #ffb533 100%);
+    background: -webkit-linear-gradient(left, #fee500 0%,#ffb533 100%);
+    background: linear-gradient(to right, #fee500 0%,#ffb533 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee500', endColorstr='#ffb533',GradientType=1 );
+    &::placeholder {
+        font-size: 14px;
+        color: $color-background;
+        opacity: .8;
+    }
+}

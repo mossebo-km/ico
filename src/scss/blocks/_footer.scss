@@ -3,3 +3,12 @@
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+.social-links {
+    max-width: 400px;
+    margin-bottom: 16px;
+    &__item {
+        margin-right: 8px;
+        display: inline-block;
+    }
+}

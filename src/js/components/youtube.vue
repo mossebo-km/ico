@@ -65,7 +65,7 @@
         margin: auto;
         width: 100%;
         max-width: 100%;
-        background-size: contain;
+        background-size: cover;
         background-position: 50%;
         background-repeat: no-repeat;
         &:before {

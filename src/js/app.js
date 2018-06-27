@@ -11,7 +11,7 @@ import Vue from 'vue'
  */
 //import './components/heightToogle'
 import Youtube from './components/youtube'
-
+import { Carousel3d, Slide } from 'vue-carousel-3d';
 
 /**
  * APP
@@ -22,7 +22,9 @@ let app = new Vue({
         message: 'Hello Vue!'
     },
     components: {
-        Youtube,
+        'youtube': Youtube,
+        'carousel-3d': Carousel3d,
+        'slide': Slide
     },
     mounted() {
         // heightToggle('.js-ht', {
