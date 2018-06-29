@@ -5,7 +5,8 @@
 
 .h2 {
     font-size: 32px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
+    line-height: 38px;
 }
 
 .h3 {
@@ -18,4 +19,8 @@
 
 strong {
     font-weight: 500;
+}
+
+p {
+    margin: 0 0 25px 0;
 }

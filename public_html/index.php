@@ -1,5 +1,5 @@
 <?php
-require_once './mix.php';
+    require_once './mix.php';
 ?>
 
 <!doctype html>
@@ -54,13 +54,15 @@ require_once './mix.php';
         </div>
     </header>
 
-
+<div class="utp-main">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-2">
-                <div class="h1">Криптомаркетплейс для b2b и b2c</div>
-                <p>Международная компания Mossebo расширяет проект mossebo.market для крипторынка</p>
-                <strong>Принять участие в проекте</strong>
+                <div class="utp-main__content">
+                    <div class="h1">Криптомаркетплейс для b2b и b2c</div>
+                    <p>Международная компания Mossebo расширяет проект mossebo.market для крипторынка</p>
+                    <strong>Принять участие в проекте</strong>
+                </div>
                 <div class="subscribe">
                     <form class="subscribe__form">
                         <input
@@ -94,6 +96,7 @@ require_once './mix.php';
             </div>
         </div>
     </div>
+</div>
 
     <div class="container we-best">
         <div class="row align-items-center">
@@ -107,9 +110,9 @@ require_once './mix.php';
             </div>
             <div class="col-3">
                 <div class="we-best__item">
-                    <p>Поставщики mossebo.market<br>
+                    Поставщики mossebo.market<br>
                         оплачивают контракты друг с другом<br>
-                        на единой криптоплатформе</p>
+                        на единой криптоплатформе
                 </div>
             </div>
             <div class="col-3">
@@ -195,8 +198,8 @@ require_once './mix.php';
             </a>
         </div>
         <div class="row">
-            <div class="col-2">
-
+            <div class="col-2 faq">
+                <accordion-list></accordion-list>
             </div>
             <div class="col-2">
                 <youtube
@@ -209,12 +212,11 @@ require_once './mix.php';
     </div>
 
 
-
     <div class="target">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-2">
-                    <img src="/assets/images/target/1.png" alt="">
+                    <img src="/assets/images/target/1.png" alt="" class="image-100">
                 </div>
                 <div class="col-2">
                     <div class="h2">Mossebo.Market упростит покупку товаров для дома</div>
@@ -230,7 +232,7 @@ require_once './mix.php';
                         от клиентов.</p>
                 </div>
                 <div class="col-2">
-                    <img src="/assets/images/target/2.png" alt="">
+                    <img src="/assets/images/target/2.png" alt="" class="image-100">
                 </div>
             </div>
         </div>
@@ -257,7 +259,7 @@ require_once './mix.php';
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-2">
-                    <img src="/assets/images/target/3.png" alt="">
+                    <img src="/assets/images/target/3.png" alt="" class="image-100">
                 </div>
                 <div class="col-2">
                     <div class="h2">Mossebo.Market защитит авторские права всех дизайнеров</div>
@@ -272,7 +274,7 @@ require_once './mix.php';
                     <p>Стремление к доступным ценам делает обустройство дома доступным всем. </p>
                 </div>
                 <div class="col-2">
-                    <img src="/assets/images/target/4.png" alt="">
+                    <img src="/assets/images/target/4.png" alt="" class="image-100">
                 </div>
             </div>
         </div>
@@ -1069,6 +1071,31 @@ require_once './mix.php';
 
 
 </div>
+
+<script>
+    window.faqList = [
+        {
+            title: 'Анализ рынка',
+            msg: 'Команда проекта собрала и оценила как открытую, так и внутреннюю статистику продаж и методы взаимодействия производителей в сфере дизайна интерьера в 7 странах.',
+        },
+        {
+            title: 'Опыт компании Mossebo',
+            msg: 'Мы представили выжимку из 5 лет роста компании Mossebo на конкурентном рынке и  принципы работы нашего холдинга.',
+        },
+        {
+            title: 'План проекта',
+            msg: 'Проект рассчитан на бурный рост и экспансию в каждый регион, и все этапы роста смоделированы опытной командой Mossebo.',
+        },
+        {
+            title: 'Технические детали проекта',
+            msg: 'Раскрываем вопросы безопасности платежей и инвестирования в проект, а также применение blockchain технологии для разных частей платформы mossebo.market',
+        },
+        {
+            title: 'Правила Private Presale',
+            msg: 'Особые правила Private Presale и pre-ICO с гарантиями выкупа токенов у инвесторов.',
+        },
+    ]
+</script>
 
 <script src="<?php echo mix('assets/js/manifest.js') ?>" defer></script>
 <script src="<?php echo mix('assets/js/vendor.js') ?>" defer></script>
