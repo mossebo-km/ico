@@ -222,40 +222,7 @@ require_once './mix.php';
 
     <div class="slider">
         <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <div class="slider__item">
-                        <div class="h2">Рабочий прототип mossebo.market</div>
-                        <p>Mossebo.market – действующий интернет-магазин мебели, декора и товаров для дома с 11 000
-                            поставщиками по всему миру.</p>
-                        <p>Через платформу mossebo.market ежедневно комплектуется
-                            не менее 175 проектов и делается от 2 500 мелких покупок.</p>
-                    </div>
-                    <div class="slider__item">
-                        <div class="h2">Криптокошелек</div>
-                        <p>На mossebo.market клиент может обменять Bitcoin, Ethirium, Dash и другие валюты на монету MSB
-                            и оплатить ей покупки со скидкой от 3 до 70 %. Покупка MSB доступна и за фиатные деньги.</p>
-                    </div>
-                    <div class="slider__item">
-                        <div class="h2">Кабинет компаний для b2b расчетов</div>
-                        <p>Каждому производителю доступны расчеты между поставщиками в MSB с безопасной сделкой, передачей документов и статистикой заказов.</p>
-                    </div>
-                    <div class="slider__item">
-                        <div class="h2">Оплата товаров в MSB</div>
-                        <p>Каждый товар mossebo.market можно купить за фиатные
-                            или криптоденьги в 2 клика</p>
-                    </div>
-                    <div class="slider__item">
-                        <div class="h2">Начать продавать на mossebo.market может любой производитель</div>
-                        <p>Загрузить товары на маркетплейс и принимать криптоплатежи может любой производитель, прошедший проверку качества mossebo.market</p>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="slider__image">
-                        <img src="assets/images/slider/1.png" alt="">
-                    </div>
-                </div>
-            </div>
+            <sticky-slider></sticky-slider>
         </div>
     </div>
 
