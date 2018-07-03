@@ -1,5 +1,5 @@
 <?php
-    require_once './mix.php';
+require_once './mix.php';
 ?>
 
 <!doctype html>
@@ -23,7 +23,7 @@
                 <div class="logo-item">
                     <a href="#" class="logo">
                         <svg class="symbol-icon symbol-logo">
-                            <use xlink:href="/assets/images/icons.svg#symbol-logo"></use>
+                            <use xlink:href="assets/images/icons.svg#symbol-logo"></use>
                         </svg>
                     </a>
                 </div>
@@ -54,56 +54,64 @@
         </div>
     </header>
 
-<div class="utp-main">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-2">
-                <div class="utp-main__content">
-                    <div class="h1">Криптомаркетплейс для b2b и b2c</div>
-                    <p>Международная компания Mossebo расширяет проект mossebo.market для крипторынка</p>
-                    <strong>Принять участие в проекте</strong>
-                </div>
-                <div class="subscribe">
-                    <form class="subscribe__form">
-                        <input
-                            type="text"
-                            placeholder="Введите ваш E-mail"
-                            class="subscribe__input"
-                        >
-                        <button class="subscribe__button">
-                            <svg class="symbol-icon symbol-arrow-right">
-                                <use xlink:href="/assets/images/icons.svg#symbol-arrow-right"></use>
+    <div class="utp-main">
+        <div class="container">
+            <img src="assets/images/circle.svg" alt="" class="utp-main__circle">
+            <img src="assets/images/circle.svg" alt="" class="utp-main__circle2">
+            <div class="row align-items-center">
+                <div class="col-2">
+                    <div class="utp-main__content">
+                        <div class="h1">Криптомаркетплейс для b2b и b2c</div>
+                        <p>Международная компания Mossebo расширяет проект mossebo.market для крипторынка</p>
+                        <strong>Принять участие в проекте</strong>
+                    </div>
+                    <div class="subscribe">
+                        <form class="subscribe__form">
+                            <input
+                                type="text"
+                                placeholder="Введите ваш E-mail"
+                                class="subscribe__input"
+                            >
+                            <button class="subscribe__button">
+                                <svg class="symbol-icon symbol-arrow-right">
+                                    <use xlink:href="assets/images/icons.svg#symbol-arrow-right"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <a href="#" target="_blank" class="subscribe__icon">
+                            <svg class="symbol-icon direct-tg">
+                                <use xlink:href="assets/images/icons.svg#direct-tg"></use>
                             </svg>
-                        </button>
-                    </form>
-                    <a href="#" target="_blank" class="subscribe__icon">
-                        <img src="/assets/images/icon/wechat.png" alt="">
-                    </a>
-                    <a href="#" target="_blank" class="subscribe__icon">
-                        <img src="/assets/images/icon/fb.png" alt="">
-                    </a>
-                    <a href="#" target="_blank" class="subscribe__icon">
-                        <img src="/assets/images/icon/tg.png" alt="">
-                    </a>
+                        </a>
+                        <a href="#" target="_blank" class="subscribe__icon">
+                            <svg class="symbol-icon direct-fb">
+                                <use xlink:href="assets/images/icons.svg#direct-fb"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="subscribe__icon">
+                            <svg class="symbol-icon direct-wechat">
+                                <use xlink:href="assets/images/icons.svg#direct-wechat"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-2">
-                <youtube
-                    video-id="SuSW65jBqBQ"
-                    video-thumb="/assets/images/video_prewiev.png"
-                >
-                </youtube>
+                <div class="col-2">
+                    <youtube
+                        video-id="SuSW65jBqBQ"
+                        video-thumb="assets/images/video_prewiev.png"
+                    >
+                    </youtube>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     <div class="container we-best">
         <div class="row align-items-center">
             <div class="col-3">
                 <div class="we-best__item">
                     <div class="we-best__icon">
-                        <img src="/assets/images/we-best/1.png" alt="">
+                        <img src="assets/images/we-best/1.png" alt="">
                     </div>
                     <div class="we-best__subtitle">Защита авторских прав</div>
                 </div>
@@ -111,14 +119,14 @@
             <div class="col-3">
                 <div class="we-best__item">
                     Поставщики mossebo.market<br>
-                        оплачивают контракты друг с другом<br>
-                        на единой криптоплатформе
+                    оплачивают контракты друг с другом<br>
+                    на единой криптоплатформе
                 </div>
             </div>
             <div class="col-3">
                 <div class="we-best__item">
                     <div class="we-best__icon">
-                        <img src="/assets/images/we-best/2.png" alt="">
+                        <img src="assets/images/we-best/2.png" alt="">
                     </div>
                     <div class="we-best__subtitle">Инвестиции в токены производителей</div>
                 </div>
@@ -159,7 +167,7 @@
             <a href="#" class="download__item">
                 <span class="download__button">
                         <svg class="symbol-icon symbol-arrow-down">
-                            <use xlink:href="/assets/images/icons.svg#symbol-arrow-down"></use>
+                            <use xlink:href="assets/images/icons.svg#symbol-arrow-down"></use>
                         </svg>
                 </span>
                 English
@@ -167,7 +175,7 @@
             <a href="#" class="download__item">
                 <span class="download__button">
                         <svg class="symbol-icon symbol-arrow-down">
-                            <use xlink:href="/assets/images/icons.svg#symbol-arrow-down"></use>
+                            <use xlink:href="assets/images/icons.svg#symbol-arrow-down"></use>
                         </svg>
                 </span>
                 Español
@@ -175,7 +183,7 @@
             <a href="#" class="download__item">
                 <span class="download__button">
                         <svg class="symbol-icon symbol-arrow-down">
-                            <use xlink:href="/assets/images/icons.svg#symbol-arrow-down"></use>
+                            <use xlink:href="assets/images/icons.svg#symbol-arrow-down"></use>
                         </svg>
                 </span>
                 Русский
@@ -183,7 +191,7 @@
             <a href="#" class="download__item">
                 <span class="download__button">
                         <svg class="symbol-icon symbol-arrow-down">
-                            <use xlink:href="/assets/images/icons.svg#symbol-arrow-down"></use>
+                            <use xlink:href="assets/images/icons.svg#symbol-arrow-down"></use>
                         </svg>
                 </span>
                 中国
@@ -191,7 +199,7 @@
             <a href="#" class="download__item">
                 <span class="download__button">
                         <svg class="symbol-icon symbol-arrow-down">
-                            <use xlink:href="/assets/images/icons.svg#symbol-arrow-down"></use>
+                            <use xlink:href="assets/images/icons.svg#symbol-arrow-down"></use>
                         </svg>
                 </span>
                 日本
@@ -204,9 +212,49 @@
             <div class="col-2">
                 <youtube
                     video-id="SuSW65jBqBQ"
-                    video-thumb="//previews.123rf.com/images/iunewind/iunewind1607/iunewind160700019/60844889-minimal-camera-screen-16x9-full-hd-or-4k-video-grid-recording-rec-led-icon-vector-background.jpg"
+                    video-thumb="assets/images/video-whitepaper.png"
                 >
                 </youtube>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="slider__item">
+                        <div class="h2">Рабочий прототип mossebo.market</div>
+                        <p>Mossebo.market – действующий интернет-магазин мебели, декора и товаров для дома с 11 000
+                            поставщиками по всему миру.</p>
+                        <p>Через платформу mossebo.market ежедневно комплектуется
+                            не менее 175 проектов и делается от 2 500 мелких покупок.</p>
+                    </div>
+                    <div class="slider__item">
+                        <div class="h2">Криптокошелек</div>
+                        <p>На mossebo.market клиент может обменять Bitcoin, Ethirium, Dash и другие валюты на монету MSB
+                            и оплатить ей покупки со скидкой от 3 до 70 %. Покупка MSB доступна и за фиатные деньги.</p>
+                    </div>
+                    <div class="slider__item">
+                        <div class="h2">Кабинет компаний для b2b расчетов</div>
+                        <p>Каждому производителю доступны расчеты между поставщиками в MSB с безопасной сделкой, передачей документов и статистикой заказов.</p>
+                    </div>
+                    <div class="slider__item">
+                        <div class="h2">Оплата товаров в MSB</div>
+                        <p>Каждый товар mossebo.market можно купить за фиатные
+                            или криптоденьги в 2 клика</p>
+                    </div>
+                    <div class="slider__item">
+                        <div class="h2">Начать продавать на mossebo.market может любой производитель</div>
+                        <p>Загрузить товары на маркетплейс и принимать криптоплатежи может любой производитель, прошедший проверку качества mossebo.market</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="slider__image">
+                        <img src="assets/images/slider/1.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -216,23 +264,25 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-2">
-                    <img src="/assets/images/target/1.png" alt="" class="image-100">
+                    <img src="assets/images/target/1.png" alt="" class="image-100">
                 </div>
                 <div class="col-2">
                     <div class="h2">Mossebo.Market упростит покупку товаров для дома</div>
                     <p>Оплата любой криптовалютой и доставка товаров по всему миру.</p>
                     <p>Скидка каждому клиенту при оплате криптовалютой от 3% до 70%.</p>
-                    <p>Блокчейн технология гарантирует доступную цену и защищает ее от махинаций со стороны продавцов.</p>
+                    <p>Блокчейн технология гарантирует доступную цену и защищает ее от махинаций со стороны
+                        продавцов.</p>
                 </div>
                 <div class="col-2">
                     <div class="h2">Mossebo.Market поможет производителям товаров для дома</div>
-                    <p>Производители, поставщики материалов, логистические службы оплачивают счета друг друга на единой b2b криптоплатформе.</p>
+                    <p>Производители, поставщики материалов, логистические службы оплачивают счета друг друга на единой
+                        b2b криптоплатформе.</p>
                     <p>Доступ к открытой статистике по спросу на товар в разных регионах мира.</p>
                     <p>Возможность сбора инвестиций для роста компании напрямую
                         от клиентов.</p>
                 </div>
                 <div class="col-2">
-                    <img src="/assets/images/target/2.png" alt="" class="image-100">
+                    <img src="assets/images/target/2.png" alt="" class="image-100">
                 </div>
             </div>
         </div>
@@ -243,13 +293,15 @@
             <div class="row align-items-center">
                 <div class="start-sell__body">
                     <div class="h2">Закрытая продажа токенов МSB уже началась</div>
-                    <div class="h-sub">Особые условия для первых инвесторов, гарантия выкупа токенов, прямое общение с командой проекта</div>
+                    <div class="h-sub">Особые условия для первых инвесторов, гарантия выкупа токенов, прямое общение с
+                        командой проекта
+                    </div>
                     <strong>Собранные средства</strong>
-                    <img src="/assets/images/current-presell.png" alt="" style="display: block; margin: 22px 0;">
+                    <img src="assets/images/current-presell.png" alt="" style="display: block; margin: 22px 0;">
                     <a href="" class="button button-primary">Подробнее</a>
                 </div>
                 <div class="start-sell__logo">
-                    <img src="/assets/images/msb_logo.png" alt="">
+                    <img src="assets/images/msb_logo.png" alt="">
                 </div>
             </div>
         </div>
@@ -259,7 +311,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-2">
-                    <img src="/assets/images/target/3.png" alt="" class="image-100">
+                    <img src="assets/images/target/3.png" alt="" class="image-100">
                 </div>
                 <div class="col-2">
                     <div class="h2">Mossebo.Market защитит авторские права всех дизайнеров</div>
@@ -269,12 +321,13 @@
                 </div>
                 <div class="col-2">
                     <div class="h2">Mossebo.Market защищает окружающую среду и развивает малый и средний бизнес</div>
-                    <p>Статистика и данные от блокчейн платформы позволят экономить ресурсы при производстве и транспортировки товаров.</p>
+                    <p>Статистика и данные от блокчейн платформы позволят экономить ресурсы при производстве и
+                        транспортировки товаров.</p>
                     <p>Честные компании получают доступ к бесплатной рекламе и инвестициям для роста бизнеса.</p>
                     <p>Стремление к доступным ценам делает обустройство дома доступным всем. </p>
                 </div>
                 <div class="col-2">
-                    <img src="/assets/images/target/4.png" alt="" class="image-100">
+                    <img src="assets/images/target/4.png" alt="" class="image-100">
                 </div>
             </div>
         </div>
@@ -284,7 +337,7 @@
         <div class="container">
             <div class="h2">Основа роста Mossebo.Market</div>
             <div class="h-sub">Общий рост мировой электронной коммерции</div>
-            <img src="/assets/images/economy.png" alt="">
+            <img src="assets/images/economy.png" alt="">
             <div class="row align-items-center">
                 <div class="col-2">
 
@@ -300,10 +353,11 @@
         <div class="container">
             <div class="h2">Порядок размещения токенов</div>
             <div class="h-sub">В первом раунде размещения эмитируются 20% токенов МSB.
-                80% зарезервированы для выхода платформы в новые регионы. </div>
+                80% зарезервированы для выхода платформы в новые регионы.
+            </div>
             <div class="row align-items-center">
                 <div class="col-2">
-                    <img src="/assets/images/currency.png" alt="" class="currency-division__diagram">
+                    <img src="assets/images/currency.png" alt="" class="currency-division__diagram">
                 </div>
                 <div class="col-2">
                     <ul class="currency-division__list">
@@ -546,18 +600,18 @@
             <div class="col-3">
                 <div class="team-members__item">
                     <div class="team-members__avatar avatar-owner"
-                         style="background-image: url(/assets/images/members/1.jpg);"
+                         style="background-image: url(assets/images/members/1.jpg);"
                     >
                     </div>
                     <div class="team-members__socials">
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-fb"></use>
                             </svg>
                         </a>
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-in">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-in"></use>
                             </svg>
                         </a>
                     </div>
@@ -569,18 +623,18 @@
             <div class="col-3">
                 <div class="team-members__item">
                     <div class="team-members__avatar avatar-owner"
-                         style="background-image: url(/assets/images/members/2.jpg);"
+                         style="background-image: url(assets/images/members/2.jpg);"
                     >
                     </div>
                     <div class="team-members__socials">
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-fb"></use>
                             </svg>
                         </a>
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-in">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-in"></use>
                             </svg>
                         </a>
                     </div>
@@ -592,18 +646,18 @@
             <div class="col-3">
                 <div class="team-members__item">
                     <div class="team-members__avatar avatar-owner"
-                         style="background-image: url(/assets/images/members/3.jpg);"
+                         style="background-image: url(assets/images/members/3.jpg);"
                     >
                     </div>
                     <div class="team-members__socials">
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-fb"></use>
                             </svg>
                         </a>
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-in">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-in"></use>
                             </svg>
                         </a>
                     </div>
@@ -629,12 +683,12 @@
                     <div class="team-members__socials">
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-fb"></use>
                             </svg>
                         </a>
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-in">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-in"></use>
                             </svg>
                         </a>
                     </div>
@@ -652,12 +706,12 @@
                     <div class="team-members__socials">
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-fb"></use>
                             </svg>
                         </a>
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-in">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-in"></use>
                             </svg>
                         </a>
                     </div>
@@ -675,12 +729,12 @@
                     <div class="team-members__socials">
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-fb"></use>
                             </svg>
                         </a>
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-in">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-in"></use>
                             </svg>
                         </a>
                     </div>
@@ -706,12 +760,12 @@
                     <div class="team-members__socials">
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-fb"></use>
                             </svg>
                         </a>
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-in">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-in"></use>
                             </svg>
                         </a>
                     </div>
@@ -729,12 +783,12 @@
                     <div class="team-members__socials">
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-fb"></use>
                             </svg>
                         </a>
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-in">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-in"></use>
                             </svg>
                         </a>
                     </div>
@@ -752,12 +806,12 @@
                     <div class="team-members__socials">
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-fb"></use>
                             </svg>
                         </a>
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-in">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-in"></use>
                             </svg>
                         </a>
                     </div>
@@ -775,12 +829,12 @@
                     <div class="team-members__socials">
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-fb"></use>
                             </svg>
                         </a>
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-in">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-in"></use>
                             </svg>
                         </a>
                     </div>
@@ -798,12 +852,12 @@
                     <div class="team-members__socials">
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-fb"></use>
                             </svg>
                         </a>
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-in">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-in"></use>
                             </svg>
                         </a>
                     </div>
@@ -821,12 +875,12 @@
                     <div class="team-members__socials">
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-fb"></use>
                             </svg>
                         </a>
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-in">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-in"></use>
                             </svg>
                         </a>
                     </div>
@@ -844,12 +898,12 @@
                     <div class="team-members__socials">
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-fb"></use>
                             </svg>
                         </a>
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-in">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-in"></use>
                             </svg>
                         </a>
                     </div>
@@ -867,12 +921,12 @@
                     <div class="team-members__socials">
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-fb"></use>
                             </svg>
                         </a>
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-in">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-in"></use>
                             </svg>
                         </a>
                     </div>
@@ -890,12 +944,12 @@
                     <div class="team-members__socials">
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-fb"></use>
                             </svg>
                         </a>
                         <a href="#" class="team-members__link">
                             <svg class="symbol-icon social-embed-in">
-                                <use xlink:href="/assets/images/icons.svg#social-embed-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-embed-in"></use>
                             </svg>
                         </a>
                     </div>
@@ -933,15 +987,15 @@
             >
                 <slide :index="0">
                     <div class="slide-block"></div>
-                    <img src="/assets/images/media-1.jpg" class="slide-image">
+                    <img src="assets/images/media-1.jpg" class="slide-image">
                 </slide>
                 <slide :index="1">
                     <div class="slide-block"></div>
-                    <img src="/assets/images/media-2.jpg" class="slide-image">
+                    <img src="assets/images/media-2.jpg" class="slide-image">
                 </slide>
                 <slide :index="2">
                     <div class="slide-block"></div>
-                    <img src="/assets/images/media-3.jpg" class="slide-image">
+                    <img src="assets/images/media-3.jpg" class="slide-image">
                 </slide>
             </carousel-3d>
         </div>
@@ -954,15 +1008,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-3">
-                    <img src="/assets/images/inst_y.png" alt="">
+                    <img src="assets/images/inst_y.png" alt="">
                     <a href="#" class="button button-primary">Перейти в профиль</a>
                 </div>
                 <div class="col-3">
-                    <img src="/assets/images/inst_v.png" alt="">
+                    <img src="assets/images/inst_v.png" alt="">
                     <a href="#" class="button button-primary">Перейти в профиль</a>
                 </div>
                 <div class="col-3">
-                    <img src="/assets/images/inst_m.png" alt="">
+                    <img src="assets/images/inst_m.png" alt="">
                     <a href="#" class="button button-primary">Перейти в профиль</a>
                 </div>
             </div>
@@ -985,23 +1039,29 @@
                             >
                             <button class="subscribe__button">
                                 <svg class="symbol-icon symbol-arrow-right">
-                                    <use xlink:href="/assets/images/icons.svg#symbol-arrow-right"></use>
+                                    <use xlink:href="assets/images/icons.svg#symbol-arrow-right"></use>
                                 </svg>
                             </button>
                         </form>
                         <a href="#" target="_blank" class="subscribe__icon">
-                            <img src="/assets/images/icon/wechat.png" alt="">
+                            <svg class="symbol-icon direct-tg">
+                                <use xlink:href="assets/images/icons.svg#direct-tg"></use>
+                            </svg>
                         </a>
                         <a href="#" target="_blank" class="subscribe__icon">
-                            <img src="/assets/images/icon/fb.png" alt="">
+                            <svg class="symbol-icon direct-fb">
+                                <use xlink:href="assets/images/icons.svg#direct-fb"></use>
+                            </svg>
                         </a>
                         <a href="#" target="_blank" class="subscribe__icon">
-                            <img src="/assets/images/icon/tg.png" alt="">
+                            <svg class="symbol-icon direct-wechat">
+                                <use xlink:href="assets/images/icons.svg#direct-wechat"></use>
+                            </svg>
                         </a>
                     </div>
                 </div>
                 <div class="start-sell__logo">
-                    <img src="/assets/images/msb_logo.png" alt="">
+                    <img src="assets/images/msb_logo.png" alt="">
                 </div>
             </div>
         </div>
@@ -1013,7 +1073,7 @@
                 <div class="col-4">
                     <a href="#" class="logo">
                         <svg class="symbol-icon symbol-logo">
-                            <use xlink:href="/assets/images/icons.svg#symbol-logo"></use>
+                            <use xlink:href="assets/images/icons.svg#symbol-logo"></use>
                         </svg>
                     </a>
                     <div class="copy">Copyright © 2018 MOSSEBO</div>
@@ -1043,24 +1103,24 @@
                     <div class="social-links">
                         <a href="https://www.instagram.com/remont.design/" class="social-links__item" target="_blank">
                             <svg class="symbol-icon social-in">
-                                <use xlink:href="/assets/images/icons.svg#social-in"></use>
+                                <use xlink:href="assets/images/icons.svg#social-in"></use>
                             </svg>
                         </a>
                         <a href="https://vk.com/design_mossebo" class="social-links__item" target="_blank">
                             <svg class="symbol-icon social-vk">
-                                <use xlink:href="/assets/images/icons.svg#social-vk"></use>
+                                <use xlink:href="assets/images/icons.svg#social-vk"></use>
                             </svg>
                         </a>
                         <a href="https://www.facebook.com/mossebodesign/" class="social-links__item" target="_blank">
                             <svg class="symbol-icon social-fb">
-                                <use xlink:href="/assets/images/icons.svg#social-fb"></use>
+                                <use xlink:href="assets/images/icons.svg#social-fb"></use>
                             </svg>
                         </a>
                         <a href="https://www.youtube.com/channel/UCmoIMunKnQwi0ui_G9W0Wmw"
                            class="social-links__item d-none d-sm-inline-block d-md-inline-block d-lg-inline-block d-xl-inline-block"
                            target="_blank">
                             <svg class="symbol-icon social-you">
-                                <use xlink:href="/assets/images/icons.svg#social-you"></use>
+                                <use xlink:href="assets/images/icons.svg#social-you"></use>
                             </svg>
                         </a>
                     </div>

@@ -2,6 +2,30 @@
 .footer {
     padding-top: 120px;
     padding-bottom: 120px;
+    .logo {
+        display: inline-block;
+        margin-bottom: 80px;
+    }
+    .copy {
+        color: $color-text-secondary;
+    }
+    &__nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            padding: 10px 0;
+            a {
+                text-decoration: none;
+                color: $color-text-primary;
+            }
+        }
+    }
+    .col-4 {
+        p {
+            max-width: 180px;
+        }
+    }
 }
 
 .social-links {

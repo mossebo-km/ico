@@ -59,6 +59,11 @@
     height: 33px;
 }
 
+.direct-tg, .direct-fb, .direct-wechat {
+    width: 52px;
+    height: 52px;
+}
+
 .symbol-flag {
     &-ru, &-en, &-jp, &-zh, &-es {
         background-image: url(../images/languages.png);

@@ -1,11 +1,29 @@
 
 .utp-main {
+    overflow: hidden;
     .h1 {
         margin-bottom: 20px;
         line-height: 50px;
     }
     &__content {
         max-width: 400px;
+    }
+    &__circle {
+        position: absolute;
+        max-width: 800px;
+        max-height: 800px;
+        z-index: -1;
+        margin-left: -320px;
+        margin-top: -280px;
+    }
+    &__circle2 {
+        display: none;
+        position: absolute;
+        width: 800px;
+        height: 800px;
+        z-index: -1;
+        margin-left: 1000px;
+        margin-top: -280px;
     }
 }
 
@@ -27,7 +45,7 @@
             .we-best__item {
                 max-width: 275px;
                 padding: 20px 40px;
-                box-shadow: 0 0 80px rgba(255,181,51, .2);
+                box-shadow: 0 0 80px rgba(252,209,51, .2);
                 border-radius: 50px;
                 font-size: 14px;
                 margin-left: auto;
@@ -110,6 +128,36 @@
         min-height: 450px;
     }
 }
+
+
+.slider {
+    &__item {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .h2 {
+        max-width: 480px;
+    }
+    p {
+        max-width: 480px;
+    }
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    &__image {
+        position: sticky;
+        top: 25%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 
 .economy {
     padding-top: 60px;

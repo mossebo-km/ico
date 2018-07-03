@@ -65,7 +65,7 @@
         margin: auto;
         width: 100%;
         max-width: 100%;
-        background-size: cover;
+        background-size: contain;
         background-position: 50%;
         background-repeat: no-repeat;
         &:before {
@@ -78,19 +78,20 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-top: -20px;
-        margin-left: -20px;
-        width: 40px;
-        height: 40px;
+        margin-top: -35px;
+        margin-left: -35px;
+        width: 70px;
+        height: 70px;
         background: $color-primary;
         color: $color-background;
-        font-size: 20px;
-        padding-left: 10px;
-        padding-top: 5px;
+        font-size: 30px;
+        padding-left: 12px;
+        padding-top: 6px;
         border: 1px solid $color-primary;
         border-radius: 50%;
         z-index: 9;
         cursor: pointer;
+        box-sizing: border-box;
     }
     .video {
         position: absolute;
