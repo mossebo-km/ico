@@ -344,6 +344,7 @@ require_once './mix.php';
     <div class="roadmap">
         <div class="container">
             <div class="h2">Roadmap</div>
+            <road-map></road-map>
         </div>
     </div>
 

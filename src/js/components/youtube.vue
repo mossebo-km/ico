@@ -60,6 +60,7 @@
 
     .player-box {
         position: relative;
+        padding: 5px 0;
     }
     .thumbnail {
         margin: auto;
@@ -92,6 +93,11 @@
         z-index: 9;
         cursor: pointer;
         box-sizing: border-box;
+        transition: 0.3s;
+        opacity: .8;
+        &:hover {
+            opacity: 1;
+        }
     }
     .video {
         position: absolute;

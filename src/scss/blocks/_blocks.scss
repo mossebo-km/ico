@@ -25,6 +25,9 @@
         margin-left: 1000px;
         margin-top: -280px;
     }
+    .player-box {
+        filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+    }
 }
 
 .we-best {
@@ -155,6 +158,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        box-shadow: 0 0 7px rgba(0,0,0,0.15);
     }
 }
 
@@ -188,9 +192,78 @@
         li {
             font-size: 24px;
             line-height: 2;
+            position: relative;
             span {
                 display: inline-block;
                 width: 110px;
+            }
+            &:before {
+                content: '';
+                display: block;
+                width: 15px;
+                height: 15px;
+                background: $color-text-primary;
+                position: absolute;
+                border-radius: 50%;
+                box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+                left: -30px;
+                top: 15px;
+            }
+            &:nth-child(1) {
+                &:before {
+                    background: #FDD43E;
+                }
+                span {
+                    color: #FDD43E;
+                }
+            }
+            &:nth-child(2) {
+                &:before {
+                    background: #FF7F00;
+                }
+                span {
+                    color: #FF7F00;
+                }
+            }
+            &:nth-child(3) {
+                &:before {
+                    background: #6ACA2F;
+                }
+                span {
+                    color: #6ACA2F;
+                }
+            }
+            &:nth-child(4) {
+                &:before {
+                    background: #4FCCFF;
+                }
+                span {
+                    color: #4FCCFF;
+                }
+            }
+            &:nth-child(5) {
+                &:before {
+                    background: #4D7BF3;
+                }
+                span {
+                    color: #4D7BF3;
+                }
+            }
+            &:nth-child(6) {
+                &:before {
+                    background: #204C9D;
+                }
+                span {
+                    color: #204C9D;
+                }
+            }
+            &:nth-child(7) {
+                &:before {
+                    background: #4F1D83;
+                }
+                span {
+                    color: #4F1D83;
+                }
             }
         }
     }
@@ -403,6 +476,8 @@
     background: #FAFBFC;
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     &__body {
         width: 65%;
         font-size: 18px;

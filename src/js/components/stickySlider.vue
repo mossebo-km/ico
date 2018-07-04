@@ -2,16 +2,19 @@
     <div>
         <div class="row">
             <div class="col-md-2">
-                <div class="slider__item js-slide" v-for="(slider, index) in sliderItems">
-                    <div class="h2">{{ index }} {{ slider.h2 }}</div>
-                    <p v-for="i in slider.p">
-                        {{ i }}
+                <div class="slider__item js-scroll-slide" v-for="(slider, index) in sliderItems">
+                    <div class="h2">{{ slider.h2 }}</div>
+                    <p v-for="text in slider.p">
+                        {{ text }}
                     </p>
                 </div>
             </div>
             <div class="col-2">
-                <div class="slider__image">
-                    <img src="assets/images/slider/1.png" alt="">
+                <div class="slider__image js-scroll-image">
+                    <div class="js-slide-image"
+                         :style="'background-image: url(' + currentImagePath + ');'"
+                    >
+                    </div>
                 </div>
             </div>
         </div>
@@ -23,7 +26,7 @@
         name: "stickySlider",
         data () {
             return {
-                scrolled: false,
+                currentImagePath: '',
                 sliderItems: [
                     {
                         h2: 'Рабочий прототип mossebo.market',
@@ -65,20 +68,46 @@
             };
         },
         methods: {
-            onScroll () {
-                this.scrolled = window.scrollY > 0;
-                console.log(window.scrollY);
+            onScroll() {
+                let scrolledImage = document.getElementsByClassName('js-scroll-image')
+                let scrolledImageCoordinates = scrolledImage[0].getBoundingClientRect()
+                let slides = document.getElementsByClassName('js-scroll-slide')
+
+                for (let i = 0; i < slides.length; i++) {
+                    let slide = slides[i]
+
+                    let slideCoordinates = slide.getBoundingClientRect()
+
+                    if (slideCoordinates.y <= scrolledImageCoordinates.y) {
+                        if (slide.clientHeight / 2 + slideCoordinates.y > scrolledImageCoordinates.y) {
+
+                            this.currentImagePath = this.sliderItems[i].image;
+                            break
+                        }
+                    }
+                }
             }
         },
-        created () {
-            window.addEventListener('scroll', this.onScroll);
+        mounted () {
+            window.addEventListener('scroll', this.onScroll, {passive: true});
         },
-        destroyed () {
+        beforeDestroy () {
             window.removeEventListener('scroll', this.onScroll);
         }
     }
+
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+    .js-slide-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: 0.3s;
+    }
 
 </style>

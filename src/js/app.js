@@ -13,6 +13,7 @@ import Youtube from './components/youtube'
 import {Carousel3d, Slide} from 'vue-carousel-3d';
 import AccordionList from './components/accordion'
 import stickySlider from './components/stickySlider'
+import roadMap from './components/roadMap'
 
 /**
  * APP
@@ -24,7 +25,8 @@ let app = new Vue({
         'accordion-list': AccordionList,
         'carousel-3d': Carousel3d,
         'slide': Slide,
-        'sticky-slider': stickySlider
+        'sticky-slider': stickySlider,
+        'road-map': roadMap,
     },
     data: {
 
