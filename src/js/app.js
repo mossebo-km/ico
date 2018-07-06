@@ -31,9 +31,23 @@ let app = new Vue({
     data: {
 
     },
-    mounted() {
-        // heightToggle('.js-ht', {
-        //     bindCloseEvents: true
-        // });
+    methods: {
+        fixedNav: function () {
+            let nav = document.getElementById('js-fixed-nav')
+            if(window.scrollY > 25) {
+                nav.classList.add('fixed')
+            }
+            else {
+                nav.classList.remove('fixed')
+            }
+            return true
+        }
+    },
+    mounted () {
+        window.addEventListener('scroll', this.fixedNav, {passive: true});
+    },
+    beforeDestroy () {
+        window.removeEventListener('scroll', this.fixedNav);
     },
 });
+

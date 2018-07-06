@@ -346,6 +346,12 @@ template {
   margin-right: auto;
 }
 
+@media (max-width: 1240px) {
+  .container {
+    width: 95%;
+  }
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,16 +538,35 @@ input:focus {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20px;
 }
 
+@media (max-width: 1040px) {
+  .subscribe {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .subscribe__form {
   width: 300px;
   display: inline-block;
   position: relative;
+}
+
+@media (max-width: 1040px) {
+  .subscribe__form {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 
 .subscribe__button {
@@ -630,7 +655,39 @@ input[type='text'].subscribe__input::placeholder {
 }
 
 .header {
-  padding: 40px 0 80px;
+  padding: 25px 0 65px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 167px;
+}
+
+.header .fixed-nav {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 15px 0;
+}
+
+.header .fixed-nav.fixed {
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 1040px) {
+  .header .menu-item {
+    display: none;
+  }
+}
+
+@media (max-width: 1040px) {
+  .header .lang-item {
+    display: none;
+  }
 }
 
 .nav {
@@ -907,6 +964,12 @@ input[type='text'].subscribe__input::placeholder {
   margin-bottom: 30px;
 }
 
+.economy img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .currency-division {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -932,7 +995,7 @@ input[type='text'].subscribe__input::placeholder {
 }
 
 .currency-division__list li {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 2;
   position: relative;
 }
@@ -940,6 +1003,7 @@ input[type='text'].subscribe__input::placeholder {
 .currency-division__list li span {
   display: inline-block;
   width: 110px;
+  font-size: 24px;
 }
 
 .currency-division__list li:before {
@@ -1022,7 +1086,7 @@ input[type='text'].subscribe__input::placeholder {
           box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
 
-.roadmap .vue-slider-piecewise .vue-slider-piecewise-item:nth-child(1) span, .roadmap .vue-slider-piecewise .vue-slider-piecewise-item:nth-child(10) span, .roadmap .vue-slider-piecewise .vue-slider-piecewise-item:nth-child(17) span, .roadmap .vue-slider-piecewise .vue-slider-piecewise-item:nth-child(21) span, .roadmap .vue-slider-piecewise .vue-slider-piecewise-item:nth-child(25) span, .roadmap .vue-slider-piecewise .vue-slider-piecewise-item:nth-child(29) span {
+.roadmap .vue-slider-piecewise .vue-slider-piecewise-item:nth-child(1) span, .roadmap .vue-slider-piecewise .vue-slider-piecewise-item:nth-child(9) span, .roadmap .vue-slider-piecewise .vue-slider-piecewise-item:nth-child(16) span, .roadmap .vue-slider-piecewise .vue-slider-piecewise-item:nth-child(20) span, .roadmap .vue-slider-piecewise .vue-slider-piecewise-item:nth-child(24) span, .roadmap .vue-slider-piecewise .vue-slider-piecewise-item:nth-child(28) span {
   width: 10px !important;
   height: 10px !important;
 }
@@ -1134,6 +1198,38 @@ input[type='text'].subscribe__input::placeholder {
 
 .work-timeline .status-3 .work-timeline__icon:before {
   background: #9B9B9B;
+}
+
+@media (max-width: 1040px) {
+  .work-timeline .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .work-timeline .row .work-timeline__item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .work-timeline .row .col-4 {
+    width: 33%;
+  }
+  .work-timeline .row .col-2 {
+    width: 100%;
+  }
+  .work-timeline .row .col-2 .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .work-timeline .row .col-2 .row .col-2 {
+    width: 33%;
+  }
 }
 
 .team-members {

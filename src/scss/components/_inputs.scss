@@ -6,12 +6,20 @@ input {
 .subscribe {
     display: flex;
     justify-content: flex-start;
+    flex-flow: row wrap;
     align-items: center;
     margin-top: 20px;
+    @media(max-width: $media-point-2) {
+        align-items: center;
+    }
     &__form {
         width: 300px;
         display: inline-block;
         position: relative;
+        @media(max-width: $media-point-2) {
+            width: 100%;
+            margin-bottom: 15px;
+        }
     }
     &__button {
         padding: 14px;

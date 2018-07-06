@@ -18,37 +18,39 @@ require_once './mix.php';
 <div id="app">
 
     <header class="header">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="logo-item">
-                    <a href="#" class="logo">
-                        <svg class="symbol-icon symbol-logo">
-                            <use xlink:href="assets/images/icons.svg#symbol-logo"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <ul class="nav">
-                        <li class="nav__item">
-                            <a href="#">Whitepaper</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#">RoadMap</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#">Моssebo.market</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="link-item">
-                    <a href="#" class="button button-primary">Стать инвестором</a>
-                </div>
-                <div class="lang-item">
-                    <a href="" class="lang-item__flag symbol-flag-ru"></a>
-                    <a href="" class="lang-item__flag symbol-flag-en"></a>
-                    <a href="" class="lang-item__flag symbol-flag-jp"></a>
-                    <a href="" class="lang-item__flag symbol-flag-zh"></a>
-                    <a href="" class="lang-item__flag symbol-flag-es"></a>
+        <div class="fixed-nav" id="js-fixed-nav">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="logo-item">
+                        <a href="#" class="logo">
+                            <svg class="symbol-icon symbol-logo">
+                                <use xlink:href="assets/images/icons.svg#symbol-logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <ul class="nav">
+                            <li class="nav__item">
+                                <a href="#">Whitepaper</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">RoadMap</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">Моssebo.market</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="link-item">
+                        <a href="#" class="button button-primary">Стать инвестором</a>
+                    </div>
+                    <div class="lang-item">
+                        <a href="" class="lang-item__flag symbol-flag-ru"></a>
+                        <a href="" class="lang-item__flag symbol-flag-en"></a>
+                        <a href="" class="lang-item__flag symbol-flag-jp"></a>
+                        <a href="" class="lang-item__flag symbol-flag-zh"></a>
+                        <a href="" class="lang-item__flag symbol-flag-es"></a>
+                    </div>
                 </div>
             </div>
         </div>

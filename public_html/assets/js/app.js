@@ -290,6 +290,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }]
         };
     },
+    created: function created() {
+        this.navigatorSlider.max = this.sliders.length;
+    },
 
     methods: {
         changeSlide: function changeSlide(i) {
@@ -9775,7 +9778,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.navigator[data-v-8141a7c0] {\n  width: 100%;\n}\n.navigator .years[data-v-8141a7c0] {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: start;\n        -ms-flex-pack: start;\n            justify-content: flex-start;\n}\n.navigator .years li[data-v-8141a7c0] {\n      font-size: 14px;\n      color: #9B9B9B;\n}\n.navigator .years li[data-v-8141a7c0]:nth-child(1) {\n        width: 29%;\n}\n.navigator .years li[data-v-8141a7c0]:nth-child(2) {\n        width: 23%;\n}\n.navigator .years li[data-v-8141a7c0]:nth-child(3) {\n        width: 13.2%;\n}\n.navigator .years li[data-v-8141a7c0]:nth-child(4) {\n        width: 13%;\n}\n.navigator .years li[data-v-8141a7c0]:nth-child(5) {\n        width: 13%;\n}\n.navigator .years li.active[data-v-8141a7c0] {\n      color: #FCD133;\n}\n.body .year[data-v-8141a7c0] {\n  font-size: 24px;\n  color: #FCD133;\n  font-weight: 500;\n  padding: 15px 0;\n}\n.body .month[data-v-8141a7c0] {\n  font-size: 14px;\n  color: #FCD133;\n}\n.body .text[data-v-8141a7c0] {\n  font-size: 14px;\n  padding: 15px 0;\n}\n", "", {"version":3,"sources":["/Users/vladstarkovsky/DEVSRV/mossebo-ico/src/js/components/roadMap.vue"],"names":[],"mappings":";AAAA;EACE,YAAY;CAAE;AACd;IACE,iBAAiB;IACjB,WAAW;IACX,UAAU;IACV,qBAAc;IAAd,qBAAc;IAAd,cAAc;IACd,wBAA4B;QAA5B,qBAA4B;YAA5B,4BAA4B;CAAE;AAC9B;MACE,gBAAgB;MAChB,eAAe;CAAE;AACjB;QACE,WAAW;CAAE;AACf;QACE,WAAW;CAAE;AACf;QACE,aAAa;CAAE;AACjB;QACE,WAAW;CAAE;AACf;QACE,WAAW;CAAE;AACjB;MACE,eAAe;CAAE;AAEvB;EACE,gBAAgB;EAChB,eAAe;EACf,iBAAiB;EACjB,gBAAgB;CAAE;AAEpB;EACE,gBAAgB;EAChB,eAAe;CAAE;AAEnB;EACE,gBAAgB;EAChB,gBAAgB;CAAE","file":"roadMap.vue","sourcesContent":[".navigator {\n  width: 100%; }\n  .navigator .years {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    display: flex;\n    justify-content: flex-start; }\n    .navigator .years li {\n      font-size: 14px;\n      color: #9B9B9B; }\n      .navigator .years li:nth-child(1) {\n        width: 29%; }\n      .navigator .years li:nth-child(2) {\n        width: 23%; }\n      .navigator .years li:nth-child(3) {\n        width: 13.2%; }\n      .navigator .years li:nth-child(4) {\n        width: 13%; }\n      .navigator .years li:nth-child(5) {\n        width: 13%; }\n    .navigator .years li.active {\n      color: #FCD133; }\n\n.body .year {\n  font-size: 24px;\n  color: #FCD133;\n  font-weight: 500;\n  padding: 15px 0; }\n\n.body .month {\n  font-size: 14px;\n  color: #FCD133; }\n\n.body .text {\n  font-size: 14px;\n  padding: 15px 0; }\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.navigator[data-v-8141a7c0] {\n  width: 100%;\n}\n.navigator .years[data-v-8141a7c0] {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: start;\n        -ms-flex-pack: start;\n            justify-content: flex-start;\n}\n.navigator .years li[data-v-8141a7c0] {\n      font-size: 14px;\n      color: #9B9B9B;\n}\n.navigator .years li[data-v-8141a7c0]:nth-child(1) {\n        width: 27%;\n}\n.navigator .years li[data-v-8141a7c0]:nth-child(2) {\n        width: 23.5%;\n}\n.navigator .years li[data-v-8141a7c0]:nth-child(3) {\n        width: 13.5%;\n}\n.navigator .years li[data-v-8141a7c0]:nth-child(4) {\n        width: 13.5%;\n}\n.navigator .years li[data-v-8141a7c0]:nth-child(5) {\n        width: 13.5%;\n}\n.navigator .years li.active[data-v-8141a7c0] {\n      color: #FCD133;\n}\n.body .year[data-v-8141a7c0] {\n  font-size: 24px;\n  color: #FCD133;\n  font-weight: 500;\n  padding: 15px 0;\n}\n.body .month[data-v-8141a7c0] {\n  font-size: 14px;\n  color: #FCD133;\n}\n.body .text[data-v-8141a7c0] {\n  font-size: 14px;\n  padding: 15px 0;\n}\n", "", {"version":3,"sources":["/Users/vladstarkovsky/DEVSRV/mossebo-ico/src/js/components/roadMap.vue"],"names":[],"mappings":";AAAA;EACE,YAAY;CAAE;AACd;IACE,iBAAiB;IACjB,WAAW;IACX,UAAU;IACV,qBAAc;IAAd,qBAAc;IAAd,cAAc;IACd,wBAA4B;QAA5B,qBAA4B;YAA5B,4BAA4B;CAAE;AAC9B;MACE,gBAAgB;MAChB,eAAe;CAAE;AACjB;QACE,WAAW;CAAE;AACf;QACE,aAAa;CAAE;AACjB;QACE,aAAa;CAAE;AACjB;QACE,aAAa;CAAE;AACjB;QACE,aAAa;CAAE;AACnB;MACE,eAAe;CAAE;AAEvB;EACE,gBAAgB;EAChB,eAAe;EACf,iBAAiB;EACjB,gBAAgB;CAAE;AAEpB;EACE,gBAAgB;EAChB,eAAe;CAAE;AAEnB;EACE,gBAAgB;EAChB,gBAAgB;CAAE","file":"roadMap.vue","sourcesContent":[".navigator {\n  width: 100%; }\n  .navigator .years {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    display: flex;\n    justify-content: flex-start; }\n    .navigator .years li {\n      font-size: 14px;\n      color: #9B9B9B; }\n      .navigator .years li:nth-child(1) {\n        width: 27%; }\n      .navigator .years li:nth-child(2) {\n        width: 23.5%; }\n      .navigator .years li:nth-child(3) {\n        width: 13.5%; }\n      .navigator .years li:nth-child(4) {\n        width: 13.5%; }\n      .navigator .years li:nth-child(5) {\n        width: 13.5%; }\n    .navigator .years li.active {\n      color: #FCD133; }\n\n.body .year {\n  font-size: 24px;\n  color: #FCD133;\n  font-weight: 500;\n  padding: 15px 0; }\n\n.body .month {\n  font-size: 14px;\n  color: #FCD133; }\n\n.body .text {\n  font-size: 14px;\n  padding: 15px 0; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -10175,23 +10178,23 @@ var render = function() {
             _vm._v("2018")
           ]),
           _vm._v(" "),
-          _c("li", { class: { active: _vm.navigatorSlider.value == 10 } }, [
+          _c("li", { class: { active: _vm.navigatorSlider.value == 9 } }, [
             _vm._v("2019")
           ]),
           _vm._v(" "),
-          _c("li", { class: { active: _vm.navigatorSlider.value == 17 } }, [
+          _c("li", { class: { active: _vm.navigatorSlider.value == 16 } }, [
             _vm._v("2020")
           ]),
           _vm._v(" "),
-          _c("li", { class: { active: _vm.navigatorSlider.value == 21 } }, [
+          _c("li", { class: { active: _vm.navigatorSlider.value == 20 } }, [
             _vm._v("2021")
           ]),
           _vm._v(" "),
-          _c("li", { class: { active: _vm.navigatorSlider.value == 25 } }, [
+          _c("li", { class: { active: _vm.navigatorSlider.value == 24 } }, [
             _vm._v("2022")
           ]),
           _vm._v(" "),
-          _c("li", { class: { active: _vm.navigatorSlider.value == 29 } }, [
+          _c("li", { class: { active: _vm.navigatorSlider.value == 28 } }, [
             _vm._v("2023")
           ])
         ]),
@@ -10686,10 +10689,22 @@ var app = new __WEBPACK_IMPORTED_MODULE_1_vue___default.a({
         'road-map': __WEBPACK_IMPORTED_MODULE_6__components_roadMap___default.a
     },
     data: {},
+    methods: {
+        fixedNav: function fixedNav() {
+            var nav = document.getElementById('js-fixed-nav');
+            if (window.scrollY > 25) {
+                nav.classList.add('fixed');
+            } else {
+                nav.classList.remove('fixed');
+            }
+            return true;
+        }
+    },
     mounted: function mounted() {
-        // heightToggle('.js-ht', {
-        //     bindCloseEvents: true
-        // });
+        window.addEventListener('scroll', this.fixedNav, { passive: true });
+    },
+    beforeDestroy: function beforeDestroy() {
+        window.removeEventListener('scroll', this.fixedNav);
     }
 });
 

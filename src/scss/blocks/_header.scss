@@ -1,5 +1,30 @@
 .header {
-    padding: 40px 0 80px;
+    padding: 25px 0 65px;
+    box-sizing: border-box;
+    height: 167px;
+    .fixed-nav {
+        transition: 0.3s;
+        padding: 15px 0;
+    }
+    .fixed-nav.fixed {
+        background: $color-background;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        box-shadow: 0 0 4px rgba(0,0,0,0.05);
+    }
+    .menu-item {
+        @media(max-width: $media-point-2) {
+            display: none;
+        }
+    }
+    .lang-item {
+        @media(max-width: $media-point-2) {
+            display: none;
+        }
+    }
 }
 
 .nav {

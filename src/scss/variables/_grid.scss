@@ -1,7 +1,16 @@
+
+$media-point-1: 1240px;
+$media-point-2: 1040px;
+$media-point-3: 1240px;
+$media-point-4: 1240px;
+
 .container {
-    width: 1240px;
+    width: $media-point-1;
     margin-left: auto;
     margin-right: auto;
+    @media(max-width: $media-point-1) {
+        width: 95%;
+    }
 }
 
 .row {

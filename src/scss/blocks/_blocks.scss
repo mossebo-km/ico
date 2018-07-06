@@ -169,6 +169,11 @@
     .h-sub {
         margin-bottom: 30px;
     }
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .currency-division {
@@ -190,12 +195,13 @@
         list-style: none;
         float: right;
         li {
-            font-size: 24px;
+            font-size: 18px;
             line-height: 2;
             position: relative;
             span {
                 display: inline-block;
                 width: 110px;
+                font-size: 24px;
             }
             &:before {
                 content: '';
@@ -278,11 +284,11 @@
                 box-shadow: 0 0 4px rgba(0,0,0,0.4);
             }
             &:nth-child(1),
-            &:nth-child(10),
-            &:nth-child(17),
-            &:nth-child(21),
-            &:nth-child(25),
-            &:nth-child(29) {
+            &:nth-child(9),
+            &:nth-child(16),
+            &:nth-child(20),
+            &:nth-child(24),
+            &:nth-child(28) {
                 span {
                     width: 10px !important;
                     height: 10px !important;
@@ -379,6 +385,29 @@
         }
         .work-timeline__icon:before {
             background: $color-default;
+        }
+    }
+    @media(max-width: $media-point-2) {
+        .row {
+            align-items: center;
+            justify-content: center;
+            .work-timeline__item {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .col-4 {
+                width: 33%;
+            }
+            .col-2 {
+                width: 100%;
+                .row {
+                    align-items: center;
+                    justify-content: center;
+                    .col-2 {
+                        width: 33%;
+                    }
+                }
+            }
         }
     }
 }

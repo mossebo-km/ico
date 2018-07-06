@@ -3,11 +3,11 @@
         <div class="navigator">
             <ul class="years">
                 <li :class="{ active: navigatorSlider.value == 1 }">2018</li>
-                <li :class="{ active: navigatorSlider.value == 10 }">2019</li>
-                <li :class="{ active: navigatorSlider.value == 17 }">2020</li>
-                <li :class="{ active: navigatorSlider.value == 21 }">2021</li>
-                <li :class="{ active: navigatorSlider.value == 25 }">2022</li>
-                <li :class="{ active: navigatorSlider.value == 29 }">2023</li>
+                <li :class="{ active: navigatorSlider.value == 9 }">2019</li>
+                <li :class="{ active: navigatorSlider.value == 16 }">2020</li>
+                <li :class="{ active: navigatorSlider.value == 20 }">2021</li>
+                <li :class="{ active: navigatorSlider.value == 24 }">2022</li>
+                <li :class="{ active: navigatorSlider.value == 28 }">2023</li>
             </ul>
             <vue-slider
                 v-bind="navigatorSlider"
@@ -263,6 +263,9 @@
                 ],
             }
         },
+        created() {
+            this.navigatorSlider.max = this.sliders.length;
+        },
         methods: {
             changeSlide: function (i) {
                 if(this.sliders[i].image) {
@@ -290,19 +293,19 @@
                 font-size: 14px;
                 color: $color-text-secondary;
                 &:nth-child(1) {
-                    width: 29%;
+                    width: 27%;
                 }
                 &:nth-child(2) {
-                    width: 23%;
+                    width: 23.5%;
                 }
                 &:nth-child(3) {
-                    width: 13.2%;
+                    width: 13.5%;
                 }
                 &:nth-child(4) {
-                    width: 13%;
+                    width: 13.5%;
                 }
                 &:nth-child(5) {
-                    width: 13%;
+                    width: 13.5%;
                 }
             }
             li.active {
