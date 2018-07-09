@@ -23,8 +23,8 @@
     "laravel-mix": "^2.0",
     "lodash": "^4.17.10",
     "normalize.css": "^8.0.0",
+    "slick-carousel": "^1.8.1",
     "vue": "^2.5.16",
-    "vue-carousel-3d": "^0.1.21",
-    "vue-slider-component": "^2.7.2"
+    "vue-carousel-3d": "^0.1.21"
   }
 }

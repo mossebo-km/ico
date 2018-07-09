@@ -246,19 +246,19 @@
                         year: 2023,
                         month: 'Август',
                         text: 'Выкуп части токенов согласно программе',
-                        image: 'assets/images/maps/5.png'
+                        image: 'assets/images/maps/6.png'
                     },
                     {
                         year: 2023,
                         month: 'Сентябрь',
                         text: 'Шестой этап размещения токенов согласно программе',
-                        image: 'assets/images/maps/5.png'
+                        image: 'assets/images/maps/6.png'
                     },
                     {
                         year: 2023,
                         month: 'Декабрь',
                         text: 'Экспансия платформы Mossebo Market в Океанию, открытие регионального центра',
-                        image: 'assets/images/maps/5.png'
+                        image: 'assets/images/maps/6.png'
                     },
                 ],
             }

@@ -2,6 +2,10 @@
     padding: 25px 0 65px;
     box-sizing: border-box;
     height: 167px;
+    @media(max-width: $media-point-2) {
+        height: auto;
+        padding: 10px 0;
+    }
     .fixed-nav {
         transition: 0.3s;
         padding: 15px 0;
@@ -15,14 +19,29 @@
         z-index: 9999;
         box-shadow: 0 0 4px rgba(0,0,0,0.05);
     }
+    .logo-item {
+        @media(max-width: $media-point-2) {
+            display: none;
+        }
+    }
     .menu-item {
         @media(max-width: $media-point-2) {
             display: none;
         }
     }
     .lang-item {
+        &__flag {
+            display: inline-block;
+            margin: 0 4px;
+        }
         @media(max-width: $media-point-2) {
             display: none;
+        }
+    }
+    .mobile-nav-item {
+        display: none;
+        @media(max-width: $media-point-2) {
+            display: block;
         }
     }
 }
@@ -38,12 +57,5 @@
             text-decoration: none;
             padding: 10px 20px;
         }
-    }
-}
-
-.lang-item {
-    &__flag {
-        display: inline-block;
-        margin: 0 4px;
     }
 }

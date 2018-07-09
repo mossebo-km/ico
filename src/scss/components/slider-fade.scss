@@ -1,0 +1,44 @@
+.slider-fade {
+    filter: drop-shadow(0 0 3px rgba(0,0,0,0.5));
+    &__image {
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 56.25%;
+        }
+    }
+
+}
+
+.slick-prev {
+    width: 45px;
+    height: 55px;
+    z-index: 9999;
+    left: 5px;
+    &:before {
+        content: '❬';
+        color: #fff;
+        font-size: 55px;
+        filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+        opacity: 1;
+    }
+}
+.slick-next {
+    width: 45px;
+    height: 55px;
+    z-index: 9999;
+    right: 5px;
+    &:before {
+        content: '❭';
+        color: #fff;
+        font-size: 55px;
+        filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+        opacity: 1;
+    }
+}

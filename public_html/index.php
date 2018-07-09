@@ -21,6 +21,13 @@ require_once './mix.php';
         <div class="fixed-nav" id="js-fixed-nav">
             <div class="container">
                 <div class="row align-items-center">
+                    <div class="mobile-nav-item">
+                        <a href="#" class="mobile-nav js-mobile-nav">
+                            <svg class="symbol-icon symbol-menu">
+                                <use xlink:href="assets/images/icons.svg#symbol-menu"></use>
+                            </svg>
+                        </a>
+                    </div>
                     <div class="logo-item">
                         <a href="#" class="logo">
                             <svg class="symbol-icon symbol-logo">
@@ -142,11 +149,38 @@ require_once './mix.php';
         </div>
         <div class="row align-items-center">
             <div class="col-2 about__slider">
-                <youtube
-                    video-id="SuSW65jBqBQ"
-                    video-thumb="//previews.123rf.com/images/iunewind/iunewind1607/iunewind160700019/60844889-minimal-camera-screen-16x9-full-hd-or-4k-video-grid-recording-rec-led-icon-vector-background.jpg"
-                >
-                </youtube>
+                <div class="slider-fade">
+                    <div class="slider-fade__image"
+                         style="background-image: url(assets/images/photos/1.jpg);">
+                    </div>
+                    <div class="slider-fade__image"
+                         style="background-image: url(assets/images/photos/2.jpg);">
+                    </div>
+                    <div class="slider-fade__image"
+                         style="background-image: url(assets/images/photos/3.jpg);">
+                    </div>
+                    <div class="slider-fade__image"
+                         style="background-image: url(assets/images/photos/4.jpg);">
+                    </div>
+                    <div class="slider-fade__image"
+                         style="background-image: url(assets/images/photos/5.jpg);">
+                    </div>
+                    <div class="slider-fade__image"
+                         style="background-image: url(assets/images/photos/6.jpg);">
+                    </div>
+                    <div class="slider-fade__image"
+                         style="background-image: url(assets/images/photos/7.jpg);">
+                    </div>
+                    <div class="slider-fade__image"
+                         style="background-image: url(assets/images/photos/8.jpg);">
+                    </div>
+                    <div class="slider-fade__image"
+                         style="background-image: url(assets/images/photos/9.jpg);">
+                    </div>
+                    <div class="slider-fade__image"
+                         style="background-image: url(assets/images/photos/10.jpg);">
+                    </div>
+                </div>
             </div>
             <div class="col-2 about__description">
                 <div class="h3">
@@ -158,6 +192,15 @@ require_once './mix.php';
                 <p>Mossebo собрала в единую базу 11 000 производителей мебели
                     и декора со всего мира.</p>
             </div>
+        </div>
+        <div class="d-p-4">
+            <div class="h2">Лидер в сфере дизайна интерьера и крупнейший маркетплейс товаров для дома</div>
+            <p>Mossebo – лидер рынка дизайна интерьера
+                с 40 студиями в 7 странах</p>
+            <p>Дизайнеры Mossebo создают сотни проектов интерьера в месяц
+                и комплектует их мебелью и предметами декора через площадку mossebo.market.</p>
+            <p>Mossebo собрала в единую базу 11 000 производителей мебели
+                и декора со всего мира.</p>
         </div>
     </div>
 

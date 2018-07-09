@@ -1,15 +1,36 @@
 
-$media-point-1: 1240px;
-$media-point-2: 1040px;
-$media-point-3: 1240px;
-$media-point-4: 1240px;
+$media-point-1: 9999px;
+$content-1: 1280px;
+
+$media-point-2: 1290px;
+$content-2: 1040px;
+
+$media-point-3: 1050px;
+$content-3: 768px;
+
+$media-point-4: 770px;
+$content-4: 425px;
+
+$media-point-5: 430px;
+$content-5: 320px;
 
 .container {
-    width: $media-point-1;
     margin-left: auto;
     margin-right: auto;
     @media(max-width: $media-point-1) {
-        width: 95%;
+        width: $content-1;
+    }
+    @media(max-width: $media-point-2) {
+        width: $content-2;
+    }
+    @media(max-width: $media-point-3) {
+        width: $content-3;
+    }
+    @media(max-width: $media-point-4) {
+        width: $content-4;
+    }
+    @media(max-width: $media-point-5) {
+        width: $content-5;
     }
 }
 
@@ -26,14 +47,31 @@ $media-point-4: 1240px;
 .col-2 {
     width: 50%;
     box-sizing: border-box;
+
+    @media(max-width: $media-point-4) {
+        width: 100%;
+    }
 }
 
 .col-3 {
     width: 33.333333%;
     box-sizing: border-box;
+    @media(max-width: $media-point-4) {
+        width: 100%;
+    }
 }
 
 .col-4 {
     width: 25%;
     box-sizing: border-box;
+    @media(max-width: $media-point-4) {
+        width: 100%;
+    }
+}
+
+.d-p-4 {
+    display: none;
+    @media(max-width: $media-point-4) {
+        display: block;
+    }
 }

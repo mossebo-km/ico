@@ -12,13 +12,17 @@ input {
     @media(max-width: $media-point-2) {
         align-items: center;
     }
+    @media(max-width: $media-point-4) {
+        margin-bottom: 25px;
+        justify-content: center;
+    }
     &__form {
         width: 300px;
         display: inline-block;
         position: relative;
         @media(max-width: $media-point-2) {
             width: 100%;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
         }
     }
     &__button {
@@ -35,6 +39,10 @@ input {
         position: absolute;
         margin-left: -52px;
         box-shadow: 0 1px 2px rgba(0,0,0,0.14);
+        @media(max-width: $media-point-4) {
+            right: 55px;
+            top: 0;
+        }
         .symbol-icon {
             fill: $color-background;
         }
@@ -55,6 +63,14 @@ input[type='text'].subscribe__input {
     background: -webkit-linear-gradient(left, #fee500 0%,#ffb533 100%);
     background: linear-gradient(to right, #fee500 0%,#ffb533 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee500', endColorstr='#ffb533',GradientType=1 );
+
+    @media(max-width: $media-point-4) {
+        display: block;
+        width: 310px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+    }
     &::placeholder {
         font-size: 14px;
         color: $color-background;

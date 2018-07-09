@@ -19,9 +19,12 @@ mix.js('src/js/app.js', publicDir + '/assets/js')
         processCssUrls: false,
     })
     .extract([
+        'babel-polyfill',
         'jquery',
         'vue',
-        'lodash'
+        'vue-carousel-3d',
+        'lodash',
+        'slick-carousel'
     ])
     .version();
 

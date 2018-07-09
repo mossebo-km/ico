@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-2">
                 <div class="slider__item js-scroll-slide" v-for="(slider, index) in sliderItems">
                     <div class="h2">{{ slider.h2 }}</div>
                     <p v-for="text in slider.p">
@@ -100,14 +100,5 @@
 
 <style lang="scss" scoped>
 
-    .js-slide-image {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
-        transition: 0.3s;
-    }
 
 </style>

@@ -14,6 +14,7 @@ import {Carousel3d, Slide} from 'vue-carousel-3d';
 import AccordionList from './components/accordion'
 import stickySlider from './components/stickySlider'
 import roadMap from './components/roadMap'
+import slick from 'slick-carousel'
 
 /**
  * APP
@@ -45,6 +46,14 @@ let app = new Vue({
     },
     mounted () {
         window.addEventListener('scroll', this.fixedNav, {passive: true});
+        $('.slider-fade').slick({
+            lazyLoad: 'ondemand',
+            dots: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
     },
     beforeDestroy () {
         window.removeEventListener('scroll', this.fixedNav);
