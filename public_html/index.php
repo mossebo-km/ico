@@ -16,7 +16,7 @@ require_once './mix.php';
 </head>
 <body>
 <div id="app">
-
+    <a id="top"></a>
     <header class="header">
         <div class="fixed-nav" id="js-fixed-nav">
             <div class="container">
@@ -29,7 +29,7 @@ require_once './mix.php';
                         </a>
                     </div>
                     <div class="logo-item">
-                        <a href="#" class="logo">
+                        <a href="#top" class="logo js-smooth-scroll">
                             <svg class="symbol-icon symbol-logo">
                                 <use xlink:href="assets/images/icons.svg#symbol-logo"></use>
                             </svg>
@@ -38,18 +38,18 @@ require_once './mix.php';
                     <div class="menu-item">
                         <ul class="nav">
                             <li class="nav__item">
-                                <a href="#">Whitepaper</a>
+                                <a href="#whitepaper" class="js-smooth-scroll">Whitepaper</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#">RoadMap</a>
+                                <a href="#roadmap" class="js-smooth-scroll">RoadMap</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#">Моssebo.market</a>
+                                <a href="https://mossebo.market/" target="_blank">Mossebo.Market</a>
                             </li>
                         </ul>
                     </div>
                     <div class="link-item">
-                        <a href="#" class="button button-primary">Стать инвестором</a>
+                        <a href="#top" class="button button-primary js-smooth-scroll">Стать инвестором</a>
                     </div>
                     <div class="lang-item">
                         <a href="" class="lang-item__flag symbol-flag-ru"></a>
@@ -65,8 +65,14 @@ require_once './mix.php';
 
     <div class="utp-main">
         <div class="container">
-            <img src="assets/images/circle.svg" alt="" class="utp-main__circle">
-            <img src="assets/images/circle.svg" alt="" class="utp-main__circle2">
+            <div class="circle-primary-box">
+                <div class="circle-primary circle-primary__1">
+                    <div class="circle-primary circle-primary__2">
+                        <div class="circle-primary circle-primary__3"></div>
+                    </div>
+                </div>
+            </div>
+
             <div class="row align-items-center">
                 <div class="col-2">
                     <div class="utp-main__content">
@@ -87,7 +93,7 @@ require_once './mix.php';
                                 </svg>
                             </button>
                         </form>
-                        <a href="#" target="_blank" class="subscribe__icon">
+                        <a href="http://t.me/mosseboio_bot" target="_blank" class="subscribe__icon">
                             <svg class="symbol-icon direct-tg">
                                 <use xlink:href="assets/images/icons.svg#direct-tg"></use>
                             </svg>
@@ -119,25 +125,43 @@ require_once './mix.php';
         <div class="row align-items-center">
             <div class="col-3">
                 <div class="we-best__item">
-                    <div class="we-best__icon">
-                        <img src="assets/images/we-best/1.png" alt="">
+                    <div class="we-best__head">
+                        <div class="we-best__icon"
+                             style="background-image: url(assets/images/we-best/1.png);"
+                        >
+                        </div>
+                        <div class="we-best__subtitle">Защита авторских прав потребителей</div>
                     </div>
-                    <div class="we-best__subtitle">Защита авторских прав</div>
+                    <div class="we-best__body">
+                        Блокчейн платформа автоматически следит за лицензионными выплатами авторам
+                    </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="we-best__item">
-                    Поставщики mossebo.market<br>
-                    оплачивают контракты друг с другом<br>
-                    на единой криптоплатформе
+                    <div class="we-best__head">
+                        <div class="we-best__icon" style="background-image: url(assets/images/we-best/2.png);"
+                        >
+                        </div>
+                        <div class="we-best__subtitle">B2B и B2C крипторасчеты</div>
+                    </div>
+                    <div class="we-best__body">
+                        Поставщики mossebo.market оплачивают контракты друг с другом
+                        на единой криптоплатформе
+                    </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="we-best__item">
-                    <div class="we-best__icon">
-                        <img src="assets/images/we-best/2.png" alt="">
+                    <div class="we-best__head">
+                        <div class="we-best__icon" style="background-image: url(assets/images/we-best/3.png);"
+                        >
+                        </div>
+                        <div class="we-best__subtitle">Инвестиции в токены производителей</div>
                     </div>
-                    <div class="we-best__subtitle">Инвестиции в токены производителей</div>
+                    <div class="we-best__body">
+                        Пользователи платформы могут инвестировать в производителей реального сектора экономики
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,10 +175,13 @@ require_once './mix.php';
             <div class="col-2 about__slider">
                 <div class="slider-fade">
                     <div class="slider-fade__image"
-                         style="background-image: url(assets/images/photos/1.jpg);">
+                         style="background-image: url(assets/images/photos/6.jpg);">
                     </div>
                     <div class="slider-fade__image"
                          style="background-image: url(assets/images/photos/2.jpg);">
+                    </div>
+                    <div class="slider-fade__image"
+                         style="background-image: url(assets/images/photos/1.jpg);">
                     </div>
                     <div class="slider-fade__image"
                          style="background-image: url(assets/images/photos/3.jpg);">
@@ -164,9 +191,6 @@ require_once './mix.php';
                     </div>
                     <div class="slider-fade__image"
                          style="background-image: url(assets/images/photos/5.jpg);">
-                    </div>
-                    <div class="slider-fade__image"
-                         style="background-image: url(assets/images/photos/6.jpg);">
                     </div>
                     <div class="slider-fade__image"
                          style="background-image: url(assets/images/photos/7.jpg);">
@@ -202,6 +226,7 @@ require_once './mix.php';
             <p>Mossebo собрала в единую базу 11 000 производителей мебели
                 и декора со всего мира.</p>
         </div>
+        <a id="whitepaper"></a>
     </div>
 
     <div class="container whitepaper">
@@ -276,7 +301,37 @@ require_once './mix.php';
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-2">
-                    <img src="assets/images/target/1.png" alt="" class="image-100">
+                    <div class="circle-third-box circle-third-left">
+                        <div class="circle-item circle-item-1">
+                            <div class="circle-item__icon">
+                                <svg class="symbol-icon symbol-target-1">
+                                    <use xlink:href="assets/images/icons.svg#symbol-target-1"></use>
+                                </svg>
+                            </div>
+                            <div class="circle-item__text">Скидки</div>
+                        </div>
+                        <div class="circle-item circle-item-2">
+                            <div class="circle-item__icon">
+                                <svg class="symbol-icon symbol-target-2">
+                                    <use xlink:href="assets/images/icons.svg#symbol-target-2"></use>
+                                </svg>
+                            </div>
+                            <div class="circle-item__text">Доставка</div>
+                        </div>
+                        <div class="circle-item circle-item-3">
+                            <div class="circle-item__icon">
+                                <svg class="symbol-icon symbol-target-3">
+                                    <use xlink:href="assets/images/icons.svg#symbol-target-3"></use>
+                                </svg>
+                            </div>
+                            <div class="circle-item__text">Безопасная сделка</div>
+                        </div>
+                        <div class="circle-third circle-third__1">
+                            <div class="circle-third circle-third__2">
+                                <div class="circle-third circle-third__3"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-2">
                     <div class="h2">Mossebo.Market упростит покупку товаров для дома</div>
@@ -294,7 +349,37 @@ require_once './mix.php';
                         от клиентов.</p>
                 </div>
                 <div class="col-2">
-                    <img src="assets/images/target/2.png" alt="" class="image-100">
+                    <div class="circle-third-box circle-third-right">
+                        <div class="circle-item circle-item-1">
+                            <div class="circle-item__icon">
+                                <svg class="symbol-icon symbol-target-4">
+                                    <use xlink:href="assets/images/icons.svg#symbol-target-4"></use>
+                                </svg>
+                            </div>
+                            <div class="circle-item__text">Мгновенный платеж</div>
+                        </div>
+                        <div class="circle-item circle-item-2">
+                            <div class="circle-item__icon">
+                                <svg class="symbol-icon symbol-target-5">
+                                    <use xlink:href="assets/images/icons.svg#symbol-target-5"></use>
+                                </svg>
+                            </div>
+                            <div class="circle-item__text">Безопасность данных</div>
+                        </div>
+                        <div class="circle-item circle-item-3">
+                            <div class="circle-item__icon">
+                                <svg class="symbol-icon symbol-target-6">
+                                    <use xlink:href="assets/images/icons.svg#symbol-target-6"></use>
+                                </svg>
+                            </div>
+                            <div class="circle-item__text">В любой стране</div>
+                        </div>
+                        <div class="circle-third circle-third__1">
+                            <div class="circle-third circle-third__2">
+                                <div class="circle-third circle-third__3"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -309,7 +394,13 @@ require_once './mix.php';
                         командой проекта
                     </div>
                     <strong>Собранные средства</strong>
-                    <img src="assets/images/current-presell.png" alt="" style="display: block; margin: 22px 0;">
+
+                    <progress-bar
+                        :current="100"
+                        :max="750000"
+                    >
+                    </progress-bar>
+
                     <a href="" class="button button-primary">Подробнее</a>
                 </div>
                 <div class="start-sell__logo">
@@ -323,7 +414,37 @@ require_once './mix.php';
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-2">
-                    <img src="assets/images/target/3.png" alt="" class="image-100">
+                    <div class="circle-third-box circle-third-left">
+                        <div class="circle-item circle-item-1">
+                            <div class="circle-item__icon">
+                                <svg class="symbol-icon symbol-target-7">
+                                    <use xlink:href="assets/images/icons.svg#symbol-target-7"></use>
+                                </svg>
+                            </div>
+                            <div class="circle-item__text">Передача прав</div>
+                        </div>
+                        <div class="circle-item circle-item-2">
+                            <div class="circle-item__icon">
+                                <svg class="symbol-icon symbol-target-8">
+                                    <use xlink:href="assets/images/icons.svg#symbol-target-8"></use>
+                                </svg>
+                            </div>
+                            <div class="circle-item__text">Поиск идей</div>
+                        </div>
+                        <div class="circle-item circle-item-3">
+                            <div class="circle-item__icon">
+                                <svg class="symbol-icon symbol-target-9">
+                                    <use xlink:href="assets/images/icons.svg#symbol-target-9"></use>
+                                </svg>
+                            </div>
+                            <div class="circle-item__text">Лицензированные выплаты</div>
+                        </div>
+                        <div class="circle-third circle-third__1">
+                            <div class="circle-third circle-third__2">
+                                <div class="circle-third circle-third__3"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-2">
                     <div class="h2">Mossebo.Market защитит авторские права всех дизайнеров</div>
@@ -339,7 +460,37 @@ require_once './mix.php';
                     <p>Стремление к доступным ценам делает обустройство дома доступным всем. </p>
                 </div>
                 <div class="col-2">
-                    <img src="assets/images/target/4.png" alt="" class="image-100">
+                    <div class="circle-third-box circle-third-right">
+                        <div class="circle-item circle-item-1">
+                            <div class="circle-item__icon">
+                                <svg class="symbol-icon symbol-target-10">
+                                    <use xlink:href="assets/images/icons.svg#symbol-target-10"></use>
+                                </svg>
+                            </div>
+                            <div class="circle-item__text">Инвестиции в производителей</div>
+                        </div>
+                        <div class="circle-item circle-item-2">
+                            <div class="circle-item__icon">
+                                <svg class="symbol-icon symbol-target-11">
+                                    <use xlink:href="assets/images/icons.svg#symbol-target-11"></use>
+                                </svg>
+                            </div>
+                            <div class="circle-item__text">Сохранение ресурсов</div>
+                        </div>
+                        <div class="circle-item circle-item-3">
+                            <div class="circle-item__icon">
+                                <svg class="symbol-icon symbol-target-12">
+                                    <use xlink:href="assets/images/icons.svg#symbol-target-12"></use>
+                                </svg>
+                            </div>
+                            <div class="circle-item__text">Прозрачная цена</div>
+                        </div>
+                        <div class="circle-third circle-third__1">
+                            <div class="circle-third circle-third__2">
+                                <div class="circle-third circle-third__3"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -349,13 +500,31 @@ require_once './mix.php';
         <div class="container">
             <div class="h2">Основа роста Mossebo.Market</div>
             <div class="h-sub">Общий рост мировой электронной коммерции</div>
-            <img src="assets/images/economy.png" alt="">
+
             <div class="row align-items-center">
                 <div class="col-2">
-
+                    <chartjs-line
+                        :labels="economyLabels"
+                        :datasets="economyData"
+                        :option="economyOption"
+                    >
+                    </chartjs-line>
                 </div>
                 <div class="col-2">
-
+                    <div class="circle-secondary-box">
+                        <div class="circle-secondary circle-secondary__1">
+                            <div class="circle-secondary circle-secondary__2">
+                                <div class="circle-secondary circle-secondary__3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="economy__list">
+                        <li><span></span> Азиатско-Тихоокеанский регион</li>
+                        <li><span></span> Северная Америка</li>
+                        <li><span></span> Западная Европа</li>
+                        <li><span></span> Латинская Америка</li>
+                        <li><span></span> Африка и Ближний Восток</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -372,6 +541,13 @@ require_once './mix.php';
                     <img src="assets/images/currency.png" alt="" class="currency-division__diagram">
                 </div>
                 <div class="col-2">
+                    <div class="circle-secondary-box">
+                        <div class="circle-secondary circle-secondary__1">
+                            <div class="circle-secondary circle-secondary__2">
+                                <div class="circle-secondary circle-secondary__3"></div>
+                            </div>
+                        </div>
+                    </div>
                     <ul class="currency-division__list">
                         <li><span>50.00 %</span> ICO</li>
                         <li><span>25.00 %</span> Команда</li>
@@ -384,6 +560,7 @@ require_once './mix.php';
                 </div>
             </div>
         </div>
+        <a id="roadmap"></a>
     </div>
 
     <div class="roadmap">
@@ -549,8 +726,7 @@ require_once './mix.php';
                         <div class="col-2">
                             <div class="work-timeline__item">
                                 <div class="work-timeline__name">
-                                    Обмен криптовалюты
-                                    на фиатные деньги
+                                    Криптозащита авторских прав
                                 </div>
                                 <div class="work-timeline__icon">
                                     В плане
@@ -683,7 +859,7 @@ require_once './mix.php';
 
     </div>
 
-    <div class="container team-members">
+    <div class="container team-members" style="display: none;">
         <div class="h2">Аdvisers</div>
 
         <div class="row">
@@ -1022,15 +1198,15 @@ require_once './mix.php';
             <div class="row">
                 <div class="col-3">
                     <img src="assets/images/inst_y.png" alt="">
-                    <a href="#" class="button button-primary">Перейти в профиль</a>
+                    <a href="https://www.instagram.com/yuriereminv/" class="button button-primary">Перейти в профиль</a>
                 </div>
                 <div class="col-3">
                     <img src="assets/images/inst_v.png" alt="">
-                    <a href="#" class="button button-primary">Перейти в профиль</a>
+                    <a href="https://www.instagram.com/turjanskii/" class="button button-primary">Перейти в профиль</a>
                 </div>
                 <div class="col-3">
                     <img src="assets/images/inst_m.png" alt="">
-                    <a href="#" class="button button-primary">Перейти в профиль</a>
+                    <a href="https://www.instagram.com/markeremin/" class="button button-primary">Перейти в профиль</a>
                 </div>
             </div>
         </div>
@@ -1056,17 +1232,17 @@ require_once './mix.php';
                                 </svg>
                             </button>
                         </form>
-                        <a href="#" target="_blank" class="subscribe__icon">
+                        <a href="http://t.me/mosseboio_bot" target="_blank" class="subscribe__icon">
                             <svg class="symbol-icon direct-tg">
                                 <use xlink:href="assets/images/icons.svg#direct-tg"></use>
                             </svg>
                         </a>
-                        <a href="#" target="_blank" class="subscribe__icon">
+                        <a href="" target="_blank" class="subscribe__icon">
                             <svg class="symbol-icon direct-fb">
                                 <use xlink:href="assets/images/icons.svg#direct-fb"></use>
                             </svg>
                         </a>
-                        <a href="#" target="_blank" class="subscribe__icon">
+                        <a href="" target="_blank" class="subscribe__icon">
                             <svg class="symbol-icon direct-wechat">
                                 <use xlink:href="assets/images/icons.svg#direct-wechat"></use>
                             </svg>
@@ -1094,23 +1270,23 @@ require_once './mix.php';
                 <div class="col-4">
                     <ul class="footer__nav">
                         <li>
-                            <a href="">Whitepaper</a>
+                            <a href="#whitepaper" class="js-smooth-scroll">Whitepaper</a>
                         </li>
                         <li>
-                            <a href="">Roadmap</a>
+                            <a href="#roadmap" class="js-smooth-scroll">Roadmap</a>
                         </li>
                         <li>
-                            <a href="">Mossebo.market</a>
+                            <a href="https://mossebo.market/" target="_blank">Mossebo.Market</a>
                         </li>
                         <li>
-                            <a href="">Mossebo.studio</a>
+                            <a href="https://mossebo.studio/" target="_blank">Mossebo.Studio</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-4">
-                    <p>Санкт-Петербург Обводного канала наб., 118а, литера Х</p>
-                    <p>8 (800) 707-83-47</p>
-                    <p>product@mossebo.market </p>
+                    <p style="display: none;">Санкт-Петербург Обводного канала наб., 118а, литера Х</p>
+                    <p style="display: none;">8 (800) 707-83-47</p>
+                    <p>start@mossebo.io</p>
                 </div>
                 <div class="col-4">
                     <div class="social-links">
@@ -1137,6 +1313,14 @@ require_once './mix.php';
                             </svg>
                         </a>
                     </div>
+                    <ul class="footer__nav">
+                        <li>
+                            <a href="#">Публичная оферта</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -1173,6 +1357,7 @@ require_once './mix.php';
 <script src="<?php echo mix('assets/js/manifest.js') ?>" defer></script>
 <script src="<?php echo mix('assets/js/vendor.js') ?>" defer></script>
 <script src="<?php echo mix('assets/js/app.js') ?>" defer></script>
+
 
 </body>
 </html>

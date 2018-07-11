@@ -2,18 +2,20 @@
 // Variables
 @import "~normalize.css";
 @import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+@import "components/slick-theme";
 
 @import "variables/global";
 @import "variables/grid";
 @import "variables/colors";
 
 // Components
+@import "components/animations";
 @import "components/fonts";
 @import "components/typography";
 @import "components/icons";
 @import "components/inputs";
 @import "components/buttons";
+@import "components/decor";
 @import "components/slider-fade";
 
 

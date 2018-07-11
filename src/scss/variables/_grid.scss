@@ -47,7 +47,7 @@ $content-5: 320px;
 .col-2 {
     width: 50%;
     box-sizing: border-box;
-
+    position: relative;
     @media(max-width: $media-point-4) {
         width: 100%;
     }

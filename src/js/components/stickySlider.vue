@@ -7,6 +7,11 @@
                     <p v-for="text in slider.p">
                         {{ text }}
                     </p>
+                    <a href="https://mossebo.market/"
+                       target="_blank"
+                       class="button button-primary"
+                       v-show="index == 0"
+                    >Перейти</a>
                 </div>
             </div>
             <div class="col-2">
@@ -39,7 +44,7 @@
                     {
                         h2: 'Криптокошелек',
                         p: [
-                            'На mossebo.market клиент может обменять Bitcoin, Ethirium, Dash и другие валюты на монету MSB и оплатить ей покупки со скидкой от 3 до 70 %. Покупка MSB доступна и за фиатные деньги.',
+                            'На mossebo.market клиент может обменять Bitcoin, Ethirium, Dash и другие валюты на монету MSB и оплатить ей покупки со скидкой от 3 до 70 %.',
                         ],
                         image: 'assets/images/slider/2.png'
                     },
@@ -100,5 +105,10 @@
 
 <style lang="scss" scoped>
 
+    .button {
+        margin-top: 30px;
+        width: 120px;
+        text-align: center;
+    }
 
 </style>

@@ -79,7 +79,7 @@
             transition: max-height 0.2s, transform 0.2s;
             p {
                 margin: 0;
-                padding: 20px 0;
+                padding: 10px 0 25px;
             }
         }
         &-question.open {

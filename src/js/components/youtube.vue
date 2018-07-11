@@ -60,7 +60,8 @@
 
     .player-box {
         position: relative;
-        padding: 5px 0;
+        padding: 0;
+        margin: 5px 0;
     }
     .thumbnail {
         margin: auto;

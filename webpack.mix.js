@@ -23,6 +23,9 @@ mix.js('src/js/app.js', publicDir + '/assets/js')
         'jquery',
         'vue',
         'vue-carousel-3d',
+        'vue-slider-component',
+        'chart.js',
+        'hchs-vue-charts',
         'lodash',
         'slick-carousel'
     ])
