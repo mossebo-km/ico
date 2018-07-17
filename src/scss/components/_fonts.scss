@@ -8,8 +8,10 @@ html, body {
     font-weight: 400;
     color: $color-text-primary;
 
-    //overflow-x: hidden;
-    //overflow-y: scroll;
+    @media(max-width: $media-point-4) {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
 
     //-webkit-font-smoothing: antialiased !important;
     //-webkit-backface-visibility: hidden;

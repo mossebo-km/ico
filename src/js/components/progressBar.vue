@@ -70,6 +70,7 @@
             .row {
                 .col-3 {
                     padding-top: 15px;
+                    width: 33%;
                     &:nth-child(1) {
                         text-align: left;
                     }

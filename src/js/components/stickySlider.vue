@@ -12,6 +12,11 @@
                        class="button button-primary"
                        v-show="index == 0"
                     >Перейти</a>
+                    <div class="slider__image mobile-image">
+                        <div class="js-slide-image" :style="'background-image: url(' + slider.image + ');'"
+                        >
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-2">
@@ -31,45 +36,8 @@
         name: "stickySlider",
         data () {
             return {
-                currentImagePath: '',
-                sliderItems: [
-                    {
-                        h2: 'Рабочий прототип mossebo.market',
-                        p: [
-                            'Mossebo.market – действующий интернет-магазин мебели, декора и товаров для дома с 11 000 поставщиками по всему миру.',
-                            'Через платформу mossebo.market ежедневно комплектуется не менее 175 проектов и делается от 2 500 мелких покупок.'
-                        ],
-                        image: 'assets/images/slider/1.png'
-                    },
-                    {
-                        h2: 'Криптокошелек',
-                        p: [
-                            'На mossebo.market клиент может обменять Bitcoin, Ethirium, Dash и другие валюты на монету MSB и оплатить ей покупки со скидкой от 3 до 70 %.',
-                        ],
-                        image: 'assets/images/slider/2.png'
-                    },
-                    {
-                        h2: 'Кабинет компаний для b2b расчетов',
-                        p: [
-                            'Каждому производителю доступны расчеты между поставщиками в MSB с безопасной сделкой, передачей документов и статистикой заказов.',
-                        ],
-                        image: 'assets/images/slider/3.png'
-                    },
-                    {
-                        h2: 'Оплата товаров в MSB',
-                        p: [
-                            'Каждый товар mossebo.market можно купить за фиатные или криптоденьги в 2 клика'
-                        ],
-                        image: 'assets/images/slider/4.png'
-                    },
-                    {
-                        h2: 'Начать продавать на mossebo.market может любой производитель',
-                        p: [
-                            'Загрузить товары на маркетплейс и принимать криптоплатежи может любой производитель, прошедший проверку качества mossebo.market'
-                        ],
-                        image: 'assets/images/slider/5.png'
-                    },
-                ],
+                currentImagePath: this.$root.getContent('stickySlider.currentImagePath'),
+                sliderItems: this.$root.getContent('stickySlider.sliderItems'),
             };
         },
         methods: {
@@ -105,10 +73,89 @@
 
 <style lang="scss" scoped>
 
+    @import "../../scss/variables/grid";
+    .slider {
+        &__item {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media(max-width: $media-point-3) {
+                padding-right: 35px;
+            }
+            @media(max-width: $media-point-4) {
+                height: auto;
+                padding-right: 0;
+            }
+        }
+        .h2 {
+            max-width: 480px;
+        }
+        p {
+            max-width: 480px;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        &__image {
+            position: sticky;
+            top: 20%;
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 0 7px rgba(0,0,0,0.15);
+            max-width: 620px;
+            margin-left: auto;
+            margin-right: auto;
+            @media(max-width: $media-point-1) {
+
+            }
+            @media(max-width: $media-point-2) {
+                height: 450px;
+            }
+            @media(max-width: $media-point-3) {
+                height: 400px;
+            }
+            @media(max-width: $media-point-4) {
+                position: relative;
+                width: 95%;
+                height: 300px;
+                display: block;
+                margin: 35px auto;
+
+            }
+        }
+    }
+    .js-slide-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        transition: 0.3s;
+        @media(max-width: $media-point-2) {
+            background-size: cover;
+        }
+    }
     .button {
         margin-top: 30px;
         width: 120px;
         text-align: center;
+    }
+    .mobile-image {
+        display: none;
+        @media(max-width: $media-point-4) {
+            display: block;
+        }
+    }
+    @media(max-width: $media-point-4) {
+        .js-scroll-image {
+            display: none;
+        }
     }
 
 </style>

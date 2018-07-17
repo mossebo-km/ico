@@ -14,15 +14,7 @@
         name: 'accordion-list',
         data() {
             return {
-                contents: {
-                    type: Array,
-                    default: [
-                        {
-                            title: 'How are you?',
-                            msg: 'I am fine thank you.',
-                        },
-                    ],
-                },
+                contents: this.$root.getContent('faqList'),
             }
         },
         methods: {
@@ -38,15 +30,13 @@
                 }
             },
         },
-        mounted() {
-            this.contents = window.faqList;
-        }
     }
 </script>
 
 <style lang="scss" scoped>
 
     @import "../../scss/variables/colors";
+    @import "../../scss/variables/grid";
 
     .faq {
         &-container {
@@ -60,6 +50,9 @@
             font-size: 18px;
             cursor: pointer;
             padding: 8px 0;
+            @media(max-width: $media-point-5) {
+                font-size: 14px;
+            }
             span {
                 margin-left: 35px;
                 color: $color-primary;

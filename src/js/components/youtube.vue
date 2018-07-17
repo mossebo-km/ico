@@ -6,7 +6,9 @@
                 @click="showVideo"
                 v-show="activeButton"
             >
-                &#9654;
+                <svg class="symbol-icon symbol-triangle">
+                    <use xlink:href="assets/images/icons.svg#symbol-triangle"></use>
+                </svg>
             </button>
             <iframe
                 class="video"
@@ -86,9 +88,8 @@
         height: 70px;
         background: $color-primary;
         color: $color-background;
-        font-size: 30px;
-        padding-left: 12px;
-        padding-top: 6px;
+        padding-left: 22px;
+        padding-top: 4px;
         border: 1px solid $color-primary;
         border-radius: 50%;
         z-index: 9;

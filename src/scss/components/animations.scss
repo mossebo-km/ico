@@ -1,44 +1,46 @@
+$color-pulse: rgba(252, 209, 51, 0.3);
+
 @keyframes pulse1 {
     0% {
-        box-shadow: 0 0 0px rgba(252, 209, 51, 0.2);
+        box-shadow: 0 0 0px $color-pulse;
     }
     45% {
-        box-shadow: 0 0 50px rgba(252, 209, 51, 0.2);
+        box-shadow: 0 0 50px $color-pulse;
     }
     55% {
-        box-shadow: 0 0 50px rgba(252, 209, 51, 0.2);
+        box-shadow: 0 0 50px $color-pulse;
     }
     100% {
-        box-shadow: 0 0 0px rgba(252, 209, 51, 0.2);
+        box-shadow: 0 0 0px $color-pulse;
     }
 }
 @keyframes pulse2 {
     0% {
-        box-shadow: 0 0 0px rgba(252, 209, 51, 0.2);
+        box-shadow: 0 0 0px $color-pulse;
     }
     30% {
-        box-shadow: 0 0 50px rgba(252, 209, 51, 0.2);
+        box-shadow: 0 0 50px $color-pulse;
     }
     70% {
-        box-shadow: 0 0 50px rgba(252, 209, 51, 0.2);
+        box-shadow: 0 0 50px $color-pulse;
     }
     100% {
-        box-shadow: 0 0 0px rgba(252, 209, 51, 0.2);
+        box-shadow: 0 0 0px $color-pulse;
     }
 }
 
 @keyframes pulse3 {
     0% {
-        box-shadow: 0 0 0px rgba(252, 209, 51, 0.2);
+        box-shadow: 0 0 0px $color-pulse;
     }
     15% {
-        box-shadow: 0 0 50px rgba(252, 209, 51, 0.2);
+        box-shadow: 0 0 50px $color-pulse;
     }
     85% {
-        box-shadow: 0 0 50px rgba(252, 209, 51, 0.2);
+        box-shadow: 0 0 50px $color-pulse;
     }
     100% {
-        box-shadow: 0 0 0px rgba(252, 209, 51, 0.2);
+        box-shadow: 0 0 0px $color-pulse;
     }
 }
 

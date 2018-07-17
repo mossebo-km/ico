@@ -15,10 +15,13 @@ import Youtube from './components/youtube';
 import {Carousel3d, Slide} from 'vue-carousel-3d';
 import AccordionList from './components/accordion';
 import stickySlider from './components/stickySlider';
+import mobileMenu from './components/mobileMenu';
 import roadMap from './components/roadMap';
 import progressBar from './components/progressBar';
+import channelLink from './components/channelLink';
 import slick from 'slick-carousel';
 import 'hchs-vue-charts';
+import tooltip from './components/tooltip';
 
 Vue.use(VueCharts);
 
@@ -34,7 +37,9 @@ let app = new Vue({
         'slide': Slide,
         'sticky-slider': stickySlider,
         'road-map': roadMap,
-        'progress-bar': progressBar
+        'progress-bar': progressBar,
+        'mobile-menu': mobileMenu,
+        'channel-link': channelLink
     },
     data: {
         economyLabels: ["2012", "2013", "2014", "2015", "2016", "2017"],
@@ -159,7 +164,7 @@ let app = new Vue({
                 data: [23, 27, 34, 40, 45, 51],
                 spanGaps: false,
             },
-        ]
+        ],
     },
     methods: {
         fixedNav: function () {
@@ -171,10 +176,24 @@ let app = new Vue({
                 nav.classList.remove('fixed')
             }
             return true
+        },
+        getContent: function (key) {
+            return _.get(window.mossebo, key);
+        },
+        switchTeamSlider: function () {
+            ;[].forEach.call(document.querySelectorAll('.js-team-slider') , el => {
+                if(window.innerWidth < 770) {
+                    el.classList.add('slider-team');
+                }
+            })
         }
+    },
+    created() {
+        this.switchTeamSlider();
     },
     mounted() {
         window.addEventListener('scroll', this.fixedNav, {passive: true});
+
         $('.slider-fade').slick({
             lazyLoad: 'ondemand',
             dots: false,
@@ -186,6 +205,16 @@ let app = new Vue({
             autoplaySpeed: 2000,
         });
 
+        $('.slider-team').slick({
+            lazyLoad: 'ondemand',
+            dots: false,
+            infinite: true,
+            speed: 600,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 5000,
+        });
+
         ;[].forEach.call(document.querySelectorAll('.js-smooth-scroll') , el => {
             el.addEventListener('click', e => {
                 e.preventDefault()
@@ -193,9 +222,16 @@ let app = new Vue({
                 new SmoothScroll(el.getAttribute('href'))
             })
         })
+        tooltip();
     },
     beforeDestroy() {
         window.removeEventListener('scroll', this.fixedNav);
     },
 });
+
+
+if (location.protocol != 'https:')
+{
+    location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
 

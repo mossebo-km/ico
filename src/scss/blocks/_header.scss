@@ -3,8 +3,8 @@
     box-sizing: border-box;
     height: 167px;
     @media(max-width: $media-point-2) {
-        height: auto;
-        padding: 10px 0;
+        height: 122px;
+        padding: 25px 0 20px;
     }
     .fixed-nav {
         transition: 0.3s;
@@ -16,7 +16,7 @@
         width: 100%;
         top: 0;
         left: 0;
-        z-index: 9999;
+        z-index: 9999999;
         box-shadow: 0 0 4px rgba(0,0,0,0.05);
     }
     .logo-item {
@@ -32,17 +32,22 @@
     .lang-item {
         &__flag {
             display: inline-block;
+            position: relative;
             margin: 0 4px;
         }
         @media(max-width: $media-point-2) {
             display: none;
         }
     }
-    .mobile-nav-item {
+    .mobile-nav {
         display: none;
         @media(max-width: $media-point-2) {
             display: block;
         }
+    }
+    .tooltip {
+        bottom: auto;
+        top: calc(100% + 10px);
     }
 }
 

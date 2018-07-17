@@ -12,7 +12,7 @@ $media-point-4: 770px;
 $content-4: 425px;
 
 $media-point-5: 430px;
-$content-5: 320px;
+$content-5: 300px;
 
 .container {
     margin-left: auto;
@@ -50,6 +50,7 @@ $content-5: 320px;
     position: relative;
     @media(max-width: $media-point-4) {
         width: 100%;
+        overflow: auto;
     }
 }
 

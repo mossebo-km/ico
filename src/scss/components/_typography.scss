@@ -20,6 +20,9 @@
         font-size: 20px;
         line-height: 26px;
     }
+    @media(max-width: $media-point-5) {
+        margin-bottom: 16px;
+    }
 }
 
 .h3 {

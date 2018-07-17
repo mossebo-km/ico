@@ -13,6 +13,9 @@
         height: 1px;
         box-sizing: border-box;
         z-index: -1;
+        @media(max-width: $media-point-5) {
+            display: none;
+        }
     }
     &__1 {
         width: 750px;
@@ -41,6 +44,9 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 50px rgba(200, 200, 200, 0.08);
+    @media(max-width: $media-point-3) {
+        display: none;
+    }
     &-box {
         position: absolute;
         width: 1px;
@@ -73,12 +79,21 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 50px rgba(200, 200, 200, 0.1);
+    @media(max-width: $media-point-4) {
+        display: none;
+    }
     &-box {
         position: absolute;
         width: 1px;
         height: 1px;
         box-sizing: border-box;
         z-index: -1;
+        @media(max-width: $media-point-4) {
+            z-index: 1;
+            position: relative;
+            width: auto;
+            height: auto;
+        }
     }
     &__1 {
         width: 640px;
@@ -114,6 +129,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    @media(max-width: $media-point-4) {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
     &__icon {
         width: 100px;
         min-width: 100px;
@@ -137,13 +158,27 @@
     &-1 {
         top: -235px;
         left: -190px;
+        @media(max-width: $media-point-4) {
+            left: auto;
+            top: auto;
+        }
     }
     &-2 {
         top: -50px;
         left: -50px;
+        @media(max-width: $media-point-4) {
+            left: auto;
+            top: auto;
+            margin-top: 20px;
+        }
     }
     &-3 {
         top: 160px;
         left: -120px;
+        @media(max-width: $media-point-4) {
+            left: auto;
+            top: auto;
+            margin-top: 20px;
+        }
     }
 }

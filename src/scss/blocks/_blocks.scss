@@ -5,6 +5,7 @@
         margin-bottom: 20px;
         @media(max-width: $media-point-3) {
             max-width: 300px;
+            font-weight: 500;
         }
     }
     &__content {
@@ -22,6 +23,7 @@
     }
     strong {
         font-size: 18px;
+        font-weight: 500;
     }
     p {
         margin-bottom: 40px;
@@ -46,9 +48,16 @@
             margin-right: auto;
             float: none !important;
         }
+        @media(max-width: $media-point-4) {
+            height: auto;
+            margin-bottom: 15px;
+        }
         &:hover {
             .we-best__head {
                 opacity: 0;
+                @media(max-width: $media-point-4) {
+                    opacity: 1;
+                }
             }
             .we-best__body {
                 opacity: 1;
@@ -102,6 +111,11 @@
         font-size: 14px;
         transition: 0.2s;
         box-sizing: border-box;
+        @media(max-width: $media-point-4) {
+            position: relative;
+            top: auto;
+            opacity: 1;
+        }
     }
 }
 
@@ -177,6 +191,11 @@
                 width: 120px;
                 margin: 8px;
             }
+            @media(max-width: $media-point-5) {
+                width: 80px;
+                margin: 5px;
+                font-size: 13px;
+            }
             &:hover {
                 .download__button {
                     border: none;
@@ -216,70 +235,44 @@
     }
 }
 
-.slider {
-    &__item {
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        @media(max-width: $media-point-3) {
-            padding-right: 35px;
-        }
-    }
-    .h2 {
-        max-width: 480px;
-    }
-    p {
-        max-width: 480px;
-    }
-    img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    &__image {
-        position: sticky;
-        top: 25%;
-        height: 45vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        box-shadow: 0 0 7px rgba(0,0,0,0.15);
-        max-width: 620px;
-        margin-left: auto;
-        margin-right: auto;
-        @media(max-width: $media-point-2) {
-            height: 450px;
-        }
-        @media(max-width: $media-point-3) {
-            height: 400px;
-        }
-    }
-    .js-slide-image {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        background-size: cover;
-        background-position: center top;
-        background-repeat: no-repeat;
-        transition: 0.3s;
-        @media(max-width: $media-point-2) {
-            background-size: cover;
-        }
-    }
-}
+
 
 .target {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media(max-width: $media-point-4) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .circle-third-left {
         left: 50%;
+        @media(max-width: $media-point-4) {
+            left: auto;
+            padding: 10px;
+        }
     }
     .circle-third-right {
         left: 50%;
+        @media(max-width: $media-point-4) {
+            left: auto;
+            padding: 10px;
+        }
     }
     .col-2:nth-child(2),.col-2:nth-child(3) {
         padding: 200px 0;
+        @media(max-width: $media-point-4) {
+            padding: 20px 0;
+        }
+    }
+    @media(max-width: $media-point-4) {
+        .col-2 {
+            &:nth-child(1) {
+                order: 2;
+            }
+            &:nth-child(2) {
+                order: 1;
+            }
+        }
     }
 }
 
@@ -287,9 +280,16 @@
     background: #FAFBFC;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media(max-width: $media-point-4) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     &__body {
         width: 65%;
         font-size: 18px;
+        @media(max-width: $media-point-4) {
+            width: 100%;
+        }
         .h-sub {
             margin-bottom: 40px;
         }
@@ -304,12 +304,19 @@
     &__logo {
         width: 35%;
         text-align: center;
+        @media(max-width: $media-point-4) {
+            display: none;
+        }
     }
 }
 
 .economy {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media(max-width: $media-point-4) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .h-sub {
         margin-bottom: 30px;
     }
@@ -369,12 +376,37 @@
         @media(max-width: $media-point-2) {
             margin-left: 290px;
         }
+        @media(max-width: $media-point-3) {
+            margin-left: 290px;
+        }
+    }
+
+    @media(max-width: $media-point-3) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .col-2 {
+            width: 100%;
+        }
+        .economy__list {
+            max-width: 300px;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+            li {
+                font-size: 12px;
+            }
+        }
     }
 }
 
 .currency-division {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media(max-width: $media-point-4) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .h-sub {
         max-width: 620px;
     }
@@ -388,6 +420,9 @@
             width: 100%;
             height: auto;
         }
+        @media(max-width: $media-point-5) {
+            width: 80%;
+        }
     }
     &__list {
         padding: 0;
@@ -398,10 +433,17 @@
             font-size: 18px;
             position: relative;
             padding: 10px 0;
+            @media(max-width: $media-point-5) {
+                font-size: 14px;
+            }
             span {
                 display: inline-block;
                 width: 110px;
                 font-size: 20px;
+                @media(max-width: $media-point-5) {
+                    font-size: 16px;
+                    width: 80px;
+                }
             }
             &:before {
                 content: '';
@@ -486,6 +528,10 @@
 .roadmap {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media(max-width: $media-point-4) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .vue-slider-piecewise {
         .vue-slider-piecewise-item {
             span {
@@ -519,6 +565,18 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: contain;
+            @media(max-width: $media-point-3) {
+                max-width: 400px;
+                max-height: 238px;
+                width: 400px;
+                height: 238px;
+            }
+            @media(max-width: $media-point-4) {
+                max-width: 300px;
+                max-height: 179px;
+                width: 300px;
+                height: 179px;
+            }
         }
         &-image {
             position: relative;
@@ -535,6 +593,10 @@
 .work-timeline {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media(max-width: $media-point-4) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .h-sub {
         margin-bottom: 30px;
     }
@@ -546,6 +608,13 @@
         margin-top: 23px;
         margin-bottom: 23px;
         box-sizing: border-box;
+        @media(max-width: $media-point-4) {
+            width: 88%;
+            padding: 15px;
+        }
+        @media(max-width: $media-point-5) {
+            width: 62%;
+        }
     }
     &__name {
         font-size: 14px;
@@ -554,6 +623,11 @@
         display: flex;
         align-items: center;
         margin-bottom: 12px;
+        @media(max-width: $media-point-4) {
+            font-size: 12px;
+            line-height: 16px;
+            height: 64px;
+        }
     }
     &__icon {
         color: $color-text-secondary;
@@ -598,8 +672,6 @@
     }
     @media(max-width: $media-point-2) {
         .row {
-            align-items: center;
-            justify-content: center;
             .work-timeline__item {
                 margin-left: auto;
                 margin-right: auto;
@@ -610,8 +682,6 @@
             .col-2 {
                 width: 100%;
                 .row {
-                    align-items: center;
-                    justify-content: center;
                     .col-2 {
                         width: 33%;
                     }
@@ -639,6 +709,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
+    @media(max-width: $media-point-4) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     &__item {
         margin-top: 60px;
     }
@@ -707,6 +781,9 @@
 
 .media-project {
     padding-top: 60px;
+    @media(max-width: $media-point-4) {
+        padding-top: 30px;
+    }
 }
 
 #productionmedia {
@@ -759,17 +836,31 @@
 .inst-person {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media(max-width: $media-point-4) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .col-3 {
         text-align: center;
     }
     .button {
         margin-top: 25px;
+        @media(max-width: $media-point-3) {
+            margin-bottom: 30px;
+        }
     }
     @media(max-width: $media-point-3) {
         img {
             display: block;
-            width: 100%;
+            max-width: 323px;
+            margin-left: auto;
+            margin-right: auto;
             height: auto;
+        }
+    }
+    @media(max-width: $media-point-5) {
+        img {
+            max-width: 100%;
         }
     }
 }

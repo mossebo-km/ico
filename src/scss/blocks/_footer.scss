@@ -2,9 +2,16 @@
 .footer {
     padding-top: 120px;
     padding-bottom: 120px;
+    @media(max-width: $media-point-4) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .logo {
         display: inline-block;
         margin-bottom: 80px;
+        @media(max-width: $media-point-4) {
+            margin-bottom: 25px;
+        }
     }
     .copy {
         color: $color-text-secondary;
