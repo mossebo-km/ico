@@ -33,7 +33,9 @@ export default class SmoothScroll {
             return elem
         }
 
-        throw new Error('Невозможно определить точку назначения.')
+        //throw new Error('Невозможно определить точку назначения.')
+
+        return location.href = '/';
     }
 
     static calculateDuration(height) {

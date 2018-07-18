@@ -85,6 +85,14 @@
     width: 33px;
     height: 33px;
 }
+.social-embed-vk {
+    width: 33px;
+    height: 33px;
+}
+.social-embed-inst {
+    width: 33px;
+    height: 33px;
+}
 
 .direct-tg, .direct-fb {
     width: 52px;
@@ -120,5 +128,19 @@
     }
     &-es {
         background-position: -140px 0;
+    }
+}
+
+.thx {
+    &-r,
+    &-b,
+    &-m,
+    &-w,
+    &-y,
+    &-f,
+    &-t,
+    &-vk {
+        width: 74px;
+        height: 73px;
     }
 }
