@@ -9,6 +9,7 @@ import ChartJS from 'chart.js'
 /**
  * Components
  */
+ 
 //import './components/heightToogle';
 import SmoothScroll from './components/SmoothScroll';
 import Youtube from './components/youtube';
@@ -230,8 +231,8 @@ let app = new Vue({
 });
 
 
-if (location.protocol != 'https:')
-{
-    location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-}
+// if (location.protocol != 'https:')
+// {
+//     location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+// }
 

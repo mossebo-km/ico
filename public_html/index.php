@@ -21,11 +21,14 @@ require_once './header.php';
                         <strong>Принять участие в проекте</strong>
                     </div>
                     <div class="subscribe">
-                        <form class="subscribe__form">
+                        <form class="subscribe__form" action="mail.php" method="post">
                             <input
                                 type="text"
                                 placeholder="Введите ваш E-mail"
                                 class="subscribe__input"
+                                name="mail"
+                                id="mail"
+                                required
                             >
                             <button class="subscribe__button">
                                 <svg class="symbol-icon symbol-arrow-right">
@@ -233,11 +236,14 @@ require_once './header.php';
 
                 <div class="subscribe">
                     <div class="h3">Получи WhitePaper Mossebo.Market<br> и персональную консультацию о проекте</div>
-                    <form class="subscribe__form">
+                    <form class="subscribe__form" action="mail.php" method="post">
                         <input
                             type="text"
                             placeholder="Введите ваш E-mail"
                             class="subscribe__input"
+                            name="mail"
+                            id="mail"
+                            required
                         >
                         <button class="subscribe__button">
                             <svg class="symbol-icon symbol-arrow-right">
@@ -947,7 +953,7 @@ require_once './header.php';
         <div class="h2">Команда проекта</div>
 
         <div class="row js-team-slider">
-            <div class="col-3">
+            <div class="col-3" style="display: none !important;">
                 <div class="team-members__item">
                     <div class="team-members__avatar avatar-team"
                          style="background-image: url(assets/images/members/artur.jpg);"
@@ -1262,11 +1268,14 @@ require_once './header.php';
                     <div class="h-sub">Самый выгодный курс и гарантия выкупа монет для инвесторов первого этапа</div>
                     <strong>Принять участие в проекте</strong>
                     <div class="subscribe">
-                        <form class="subscribe__form">
+                        <form class="subscribe__form" action="mail.php" method="post">
                             <input
                                 type="text"
                                 placeholder="Введите ваш E-mail"
                                 class="subscribe__input"
+                                name="mail"
+                                id="mail"
+                                required
                             >
                             <button class="subscribe__button">
                                 <svg class="symbol-icon symbol-arrow-right">

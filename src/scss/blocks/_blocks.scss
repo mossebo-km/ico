@@ -869,18 +869,24 @@
             margin-bottom: 30px;
         }
     }
-    @media(max-width: $media-point-3) {
+    @media(max-width: $media-point-1) {
         img {
             display: block;
-            max-width: 323px;
+            position: relative;
+            max-width: 340px;
             margin-left: auto;
             margin-right: auto;
             height: auto;
         }
     }
+    @media(max-width: $media-point-3) {
+        img {
+            max-width: 220px;
+        }
+    }
     @media(max-width: $media-point-5) {
         img {
-            max-width: 100%;
+            max-width: 90%;
         }
     }
 }
